@@ -4,7 +4,17 @@
   "description": "Toont uit de applicatie zelf aan wat de BIO2 van een kritische applicatie vraagt: configuratie-export en logsample deterministisch getoetst, AI alleen voor extractie, mens beslist.",
   "siteTitle": "Applicatiecheck",
   "tabs": [
-    { "file": "README.md", "id": "ontwerp", "label": "Ontwerp" }
+    {
+      "file": "README.md",
+      "id": "ontwerp",
+      "label": "Ontwerp"
+    },
+    {
+      "file": "indeling.md",
+      "id": "indeling",
+      "label": "Indeling",
+      "title": "Indeling: welk bewijs per maatregel"
+    }
   ],
   "queryFiles": []
 }

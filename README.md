@@ -61,7 +61,8 @@ Het landschap is al bezet, en dit instrument past ertussen zonder iets te dubbel
 ## Vier soorten bewijs
 
 Van de 148 maatregelen in de BIO2 is een minderheid uit een applicatie af te leiden. Het instrument legt
-per maatregel vast welke soort bewijs geldt, en die indeling is het eerste product, ook zonder tool.
+per maatregel vast welke soort bewijs geldt, en die indeling is het eerste product, ook zonder tool: zie
+[indeling.md](indeling.md), gegenereerd uit `bewijs.json`.
 
 | Bewijssoort | Wat het bewijst | Deterministisch | Waar AI mag helpen |
 |---|---|---|---|
@@ -126,8 +127,9 @@ leest, wordt vastgelegd in het bouwplan in de
 
 Drie vragen waar we het antwoord nog niet op hebben:
 
-- Welke van de 148 maatregelen horen bij A, B, C of D? Een eerste indeling staat in het bouwplan; wie er
-  een zaaksysteem naast legt, ziet vast dingen die wij missen.
+- Welke van de 148 maatregelen horen bij A, B, C of D? Een eerste, voorlopige indeling staat in
+  [indeling.md](indeling.md) (bron: `bewijs.json`); wie er een zaaksysteem naast legt, ziet vast dingen die
+  wij missen.
 - Hoe ziet een configuratie-export van jouw zaaksysteem eruit, en mag een geanonimiseerde versie als
   fixture dienen?
 - Regels in JSON, of een bestaande regeltaal? De eerste is leesbaar voor niet-ontwikkelaars, de tweede

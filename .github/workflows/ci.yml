@@ -1,0 +1,41 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  # De bron, de indeling en de afgeleiden, via de herbruikbare org-workflow.
+  # cisochat wordt erbij uitgecheckt zodat de BIO2-kopie tegen de bron wordt gecontroleerd; hij gaat
+  # naar ../cisochat omdat tools/haal_bio2.py de bron naast de repo verwacht.
+  bewijs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          path: applicatiecheck
+
+      - uses: actions/checkout@v6
+        with:
+          repository: security-commons-nl/cisochat
+          path: cisochat
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Installeren
+        run: python -m pip install --upgrade pip pytest
+
+      - name: BIO2-kopie loopt gelijk met cisochat
+        working-directory: applicatiecheck
+        run: python tools/haal_bio2.py --check
+
+      - name: Tests
+        working-directory: applicatiecheck
+        run: python -m pytest tests/ -v

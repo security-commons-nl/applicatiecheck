@@ -1,0 +1,1965 @@
+{
+  "titel": "Bewijssoort per BIO2-overheidsmaatregel voor een gekochte applicatie",
+  "toelichting": "Per overheidsmaatregel: uit welk soort bewijs een applicatie hem kan aantonen (A, B, C) of dat het bewijs buiten de applicatie ligt (D). Kader: CIP BIO Thema-uitwerking Softwarepakketten (gekochte applicatie); ASVS-verwijzingen via OpenCRE als aanwijzing wat het bewijs moet bevatten. Status voorlopig: ingedeeld op titel, thema en BIO2-tekst, nog niet per maatregel bevestigd door een vakgenoot met een zaaksysteem ernaast.",
+  "peildatum": "2026-09-02",
+  "bron_bio2": {
+    "bestand": "bronnen/bio2.json",
+    "versie": "BIO2 v1.3 definitief - 9 januari 2026",
+    "commit": "0d2de8b9c460f9fa9e17521006196d7f337e7a4a"
+  },
+  "soorten": {
+    "A": "Configuratie-export: wat is ingesteld. Regel per veld, parser per applicatie.",
+    "B": "Logsample: wat er gebeurt. Structuurtoets op de laatste 24 uur of 1000 regels; geen gedragsmeting.",
+    "C": "Document of schermafbeelding: wat A en B niet raken. AI-extractie, altijd met menselijke bevestiging.",
+    "D": "Niet uit de applicatie: proces en organisatie. Het instrument zegt dit hardop."
+  },
+  "bron_waarden": {
+    "eigen": "de organisatie kan het bewijs zelf maken",
+    "leverancier": "het bewijs komt van de leverancier",
+    "nvt": "geen bewijs uit de applicatie"
+  },
+  "maatregelen": [
+    {
+      "id": "5.01.01",
+      "titel": "Informatiebeveiligingsbeleid",
+      "thema": "IV-beleid",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (IV-beleid); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.01.02",
+      "titel": "Beleidsregels voor informatie beveiliging",
+      "thema": "IV-beleid",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (IV-beleid); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.02.01",
+      "titel": "Rollen en verantwoordelijkheden bij informatiebeveiliging",
+      "thema": "IV-beleid",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (IV-beleid); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.02.02",
+      "titel": "Rollen en verantwoordelijkheden bij informatiebeveiliging",
+      "thema": "IV-beleid",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (IV-beleid); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.03.01",
+      "titel": "Functiescheiding",
+      "thema": "IV-beleid",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (IV-beleid); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.04.01",
+      "titel": "Managementverantwoordelijkheden",
+      "thema": "Screening, bewustzijn & opleiding",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (Screening, bewustzijn & opleiding); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.04.02",
+      "titel": "Managementverantwoordelijkheden",
+      "thema": "Screening, bewustzijn & opleiding",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (Screening, bewustzijn & opleiding); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.04.03",
+      "titel": "Managementverantwoordelijkheden",
+      "thema": "Screening, bewustzijn & opleiding",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (Screening, bewustzijn & opleiding); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.05.01",
+      "titel": "Contact met overheidsinstanties",
+      "thema": "IV-beleid",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (IV-beleid); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.06.01",
+      "titel": "Contact met speciale belangengroepen",
+      "thema": "IV-beleid",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (IV-beleid); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.07.01",
+      "titel": "Informatie en analyses over dreigingen",
+      "thema": "IV-beleid",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (IV-beleid); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.08.01",
+      "titel": "Informatiebeveiliging in projectmanagement",
+      "thema": "Informatiebeveiliging binnen projecten",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (Informatiebeveiliging binnen projecten); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.09.01",
+      "titel": "Inventarisatie van informatie en andere gerelateerde bedrijfsmiddelen",
+      "thema": "Bedrijfsmiddelenbeheer",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (Bedrijfsmiddelenbeheer); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.10.01",
+      "titel": "Aanvaardbaar gebruik van informatie en andere gerelateerde bedrijfsmiddelen",
+      "thema": "Bedrijfsmiddelenbeheer",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (Bedrijfsmiddelenbeheer); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.11.01",
+      "titel": "Retourneren van bedrijfsmiddelen",
+      "thema": "Bedrijfsmiddelenbeheer",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (Bedrijfsmiddelenbeheer); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.12.01",
+      "titel": "Classificeren van informatie",
+      "thema": "Informatie classificatie",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (Informatie classificatie); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.13.01",
+      "titel": "Labelen van informatie",
+      "thema": "Informatie classificatie",
+      "soort": [
+        "C"
+      ],
+      "bron": "eigen",
+      "bewijs": "Schermafbeelding van de labelinstelling (vertrouwelijkheidsaanduiding per zaak of document) als de applicatie die kent.",
+      "asvs": "",
+      "motivering": "Labelen is een organisatiemaatregel; alleen de ondersteuning in de applicatie is aantoonbaar.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.14.01",
+      "titel": "Overdragen van informatie",
+      "thema": "Informatie classificatie",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (Informatie classificatie); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.14.02",
+      "titel": "Overdragen van informatie",
+      "thema": "Informatie classificatie",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (Informatie classificatie); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.14.03",
+      "titel": "Overdragen van informatie",
+      "thema": "Informatie classificatie",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (Informatie classificatie); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.14.04",
+      "titel": "Overdragen van informatie",
+      "thema": "Informatie classificatie",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (Informatie classificatie); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.14.05",
+      "titel": "Overdragen van informatie",
+      "thema": "Informatie classificatie",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (Informatie classificatie); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.15.01",
+      "titel": "Toegangsbeveiliging",
+      "thema": "Logische toegangsbeveiliging",
+      "soort": [
+        "A"
+      ],
+      "bron": "eigen",
+      "bewijs": "Instellingen voor toegestane herkomst: SSO-eis via de centrale identity provider, IP- of zonebeperking, apparaatvereiste.",
+      "asvs": "V4",
+      "motivering": "De vertrouwde zone zelf is infrastructuur; wat de applicatie eist van wie binnenkomt staat in de configuratie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.16.01",
+      "titel": "Identiteitsbeheer",
+      "thema": "Logische toegangsbeveiliging",
+      "soort": [
+        "A",
+        "B"
+      ],
+      "bron": "eigen",
+      "bewijs": "Accountlijst: unieke, persoonsgebonden accounts, koppeling aan de centrale identity provider, geen gedeelde accounts; in de log: aanmaken en verwijderen van accounts.",
+      "asvs": "V2.1",
+      "motivering": "De tekst in de bron (AdES, registratie internetfacing) wijkt af van de titel; ingedeeld op de ISO-maatregel identiteitsbeheer.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.16.02",
+      "titel": "Identiteitsbeheer",
+      "thema": "Logische toegangsbeveiliging",
+      "soort": [
+        "A",
+        "B"
+      ],
+      "bron": "eigen",
+      "bewijs": "Als 5.16.01; daarnaast de registratie van de applicatie als internetfacing voorziening (D, buiten de applicatie).",
+      "asvs": "V2.1",
+      "motivering": "Zie 5.16.01.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.17.01",
+      "titel": "Authenticatie-informatie",
+      "thema": "Logische toegangsbeveiliging",
+      "soort": [
+        "A",
+        "B"
+      ],
+      "bron": "eigen",
+      "bewijs": "MFA-instelling (afgedwongen voor alle accounts, of per rol), wachtwoordbeleid, lockout; in de log: inlogs zonder tweede factor.",
+      "asvs": "V2.2, V2.8",
+      "motivering": "De instelling bewijst de opzet, de log bewijst of hij ook werkt.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.17.02",
+      "titel": "Authenticatie-informatie",
+      "thema": "Logische toegangsbeveiliging",
+      "soort": [
+        "A",
+        "B"
+      ],
+      "bron": "eigen",
+      "bewijs": "Als 5.17.01, met de twee MFA-vormen die BIO2 noemt.",
+      "asvs": "V2.2, V2.8",
+      "motivering": "Zie 5.17.01.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.17.03",
+      "titel": "Authenticatie-informatie",
+      "thema": "Logische toegangsbeveiliging",
+      "soort": [
+        "A",
+        "B"
+      ],
+      "bron": "eigen",
+      "bewijs": "Als 5.17.01; specifiek voor beheeraccounts en via internet bereikbare toegang.",
+      "asvs": "V2.2, V2.8",
+      "motivering": "Zie 5.17.01.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.18.01",
+      "titel": "Toegangsrechten",
+      "thema": "Logische toegangsbeveiliging",
+      "soort": [
+        "A",
+        "B"
+      ],
+      "bron": "eigen",
+      "bewijs": "Rollen- en autorisatiematrix (wie mag wat), lijst van accounts met rol; in de log: toekennen en intrekken van rechten, laatste inlog per account (inactieve accounts met rechten).",
+      "asvs": "V4.1",
+      "motivering": "De tekst in de bron herhaalt de MFA-tekst van 5.17; ingedeeld op de ISO-maatregel toegangsrechten.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.18.02",
+      "titel": "Toegangsrechten",
+      "thema": "Logische toegangsbeveiliging",
+      "soort": [
+        "A",
+        "B"
+      ],
+      "bron": "eigen",
+      "bewijs": "Als 5.18.01; de periodieke beoordeling zelf is proces (D).",
+      "asvs": "V4.1",
+      "motivering": "Zie 5.18.01.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.19.01",
+      "titel": "Informatiebeveiliging in leveranciersrelaties",
+      "thema": "Leveranciersbeheer - Inkoop",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (Leveranciersbeheer - Inkoop); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.20.01",
+      "titel": "Adresseren van informatiebeveiliging in leveranciersovereenkomsten",
+      "thema": "Leveranciersbeheer - Inkoop",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (Leveranciersbeheer - Inkoop); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.20.02",
+      "titel": "Adresseren van informatiebeveiliging in leveranciersovereenkomsten",
+      "thema": "Leveranciersbeheer - Inkoop",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (Leveranciersbeheer - Inkoop); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.20.03",
+      "titel": "Adresseren van informatiebeveiliging in leveranciersovereenkomsten",
+      "thema": "Leveranciersbeheer - Inkoop",
+      "soort": [
+        "C"
+      ],
+      "bron": "leverancier",
+      "bewijs": "Assurance-rapport of certificaat van een onafhankelijke derde met een scope die de dienst dekt (ISAE 3402, ISO 27001-certificaat met verklaring van toepasselijkheid, pentestrapport).",
+      "asvs": "",
+      "motivering": "De leverancier toont aan; het instrument registreert het bewijs met peildatum en scope.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.21.02",
+      "titel": "Beheren van informatiebeveiliging in de ICT-toeleveringsketen",
+      "thema": "Leveranciersbeheer - Inkoop",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (Leveranciersbeheer - Inkoop); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.21.03",
+      "titel": "Beheren van informatiebeveiliging in de ICT-toeleveringsketen",
+      "thema": "Leveranciersbeheer - contractbeheer",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (Leveranciersbeheer - contractbeheer); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.21.04",
+      "titel": "Beheren van informatiebeveiliging in de ICT-toeleveringsketen",
+      "thema": "Leveranciersbeheer - contractbeheer",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (Leveranciersbeheer - contractbeheer); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.22.01",
+      "titel": "Monitoren, beoordelen en het beheren van wijzigingen van leveranciersdiensten",
+      "thema": "Leveranciersbeheer - contractbeheer",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (Leveranciersbeheer - contractbeheer); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.22.02",
+      "titel": "Monitoren, beoordelen en het beheren van wijzigingen van leveranciersdiensten",
+      "thema": "Leveranciersbeheer - contractbeheer",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (Leveranciersbeheer - contractbeheer); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.23.01",
+      "titel": "Informatiebeveiliging voor het gebruik van clouddiensten",
+      "thema": "Leveranciersbeheer - contractbeheer",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (Leveranciersbeheer - contractbeheer); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.24.01",
+      "titel": "Plannen en voorbereiden van het beheer van informatie-beveiligingsincidenten",
+      "thema": "Security Incident Management",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (Security Incident Management); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.24.02",
+      "titel": "Plannen en voorbereiden van het beheer van informatie-beveiligingsincidenten",
+      "thema": "Security Incident Management",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (Security Incident Management); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.24.03",
+      "titel": "Plannen en voorbereiden van het beheer van informatie-beveiligingsincidenten",
+      "thema": "Security Incident Management",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (Security Incident Management); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.24.04",
+      "titel": "Plannen en voorbereiden van het beheer van informatie-beveiligingsincidenten",
+      "thema": "Security Incident Management",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (Security Incident Management); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.24.05",
+      "titel": "Plannen en voorbereiden van het beheer van informatie-beveiligingsincidenten",
+      "thema": "Security Incident Management",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (Security Incident Management); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.24.06",
+      "titel": "Plannen en voorbereiden van het beheer van informatie-beveiligingsincidenten",
+      "thema": "Security Incident Management",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (Security Incident Management); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.24.07",
+      "titel": "Plannen en voorbereiden van het beheer van informatie-beveiligingsincidenten",
+      "thema": "Security Incident Management",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (Security Incident Management); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.25.01",
+      "titel": "Beoordelen van en besluiten over informatiebeveiligingsgebeurtenissen",
+      "thema": "Security Incident Management",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (Security Incident Management); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.26.01",
+      "titel": "Reageren op informatiebeveiligings-incidenten",
+      "thema": "Security Incident Management",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (Security Incident Management); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.27.01",
+      "titel": "Leren van informatiebeveiligingsincidenten",
+      "thema": "Security Incident Management",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (Security Incident Management); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.27.02",
+      "titel": "Verzamelen van bewijsmateriaal",
+      "thema": "Security Incident Management",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (Security Incident Management); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.28.01",
+      "titel": "Verzamelen van bewijsmateriaal",
+      "thema": "Security Incident Management",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (Security Incident Management); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.29.01",
+      "titel": "Informatiebeveiliging tijdens een verstoring",
+      "thema": "Business Continuity & Disaster Recovery",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (Business Continuity & Disaster Recovery); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.30.01",
+      "titel": "ICT-gereedheid voor bedrijfscontinuïteit",
+      "thema": "Business Continuity & Disaster Recovery",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (Business Continuity & Disaster Recovery); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.30.02",
+      "titel": "ICT-gereedheid voor bedrijfscontinuïteit",
+      "thema": "Business Continuity & Disaster Recovery",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (Business Continuity & Disaster Recovery); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.31.01",
+      "titel": "Wettelijke, statutaire, regelgevende en contractuele eisen",
+      "thema": "IT-Compliance",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (IT-Compliance); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.32.01",
+      "titel": "Intellectuele-eigendomsrechten",
+      "thema": "IT-Compliance",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (IT-Compliance); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.33.01",
+      "titel": "Beschermen van registraties",
+      "thema": "IT-Compliance",
+      "soort": [
+        "A",
+        "C"
+      ],
+      "bron": "eigen",
+      "bewijs": "Bewaartermijnen en vernietigingsregels zoals ingesteld in de applicatie (koppeling aan de selectielijst), en of ze actief zijn.",
+      "asvs": "",
+      "motivering": "Voor een zaaksysteem de kern van de Archiefwet; de instelling is aantoonbaar, de toets op werking is proces.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.34.01",
+      "titel": "Privacy en bescherming van persoonsgegevens",
+      "thema": "IT-Compliance",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (IT-Compliance); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.35.02",
+      "titel": "Onafhankelijke beoordeling van informatiebeveiliging",
+      "thema": "IV-beleid",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (IV-beleid); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.36.01",
+      "titel": "Naleving van beleid, regels en normen voor informatiebeveiliging",
+      "thema": "IV-beleid",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (IV-beleid); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "6.02.01",
+      "titel": "Arbeidsovereenkomst",
+      "thema": "Screening, bewustzijn & opleiding",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Personele maatregel (Screening, bewustzijn & opleiding); niet uit de applicatie aantoonbaar.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "6.03.01",
+      "titel": "Bewustwording van, opleiding en training in informatiebeveiliging",
+      "thema": "Screening, bewustzijn & opleiding",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Personele maatregel (Screening, bewustzijn & opleiding); niet uit de applicatie aantoonbaar.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "6.03.02",
+      "titel": "Bewustwording van, opleiding en training in informatiebeveiliging",
+      "thema": "Screening, bewustzijn & opleiding",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Personele maatregel (Screening, bewustzijn & opleiding); niet uit de applicatie aantoonbaar.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "6.03.03",
+      "titel": "Bewustwording van, opleiding en training in informatiebeveiliging",
+      "thema": "Screening, bewustzijn & opleiding",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Personele maatregel (Screening, bewustzijn & opleiding); niet uit de applicatie aantoonbaar.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "6.04.01",
+      "titel": "Disciplinaire procedure",
+      "thema": "Screening, bewustzijn & opleiding",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Personele maatregel (Screening, bewustzijn & opleiding); niet uit de applicatie aantoonbaar. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "6.05.01",
+      "titel": "Verantwoordelijkheden na beëindiging of wijziging van het dienstverband",
+      "thema": "Screening, bewustzijn & opleiding",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Personele maatregel (Screening, bewustzijn & opleiding); niet uit de applicatie aantoonbaar. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "6.06.01",
+      "titel": "Vertrouwelijkheids- of geheimhoudingsovereenkomsten",
+      "thema": "Screening, bewustzijn & opleiding",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Personele maatregel (Screening, bewustzijn & opleiding); niet uit de applicatie aantoonbaar. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "6.07.01",
+      "titel": "Werken op afstand",
+      "thema": "Logische toegangsbeveiliging",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Personele maatregel (Logische toegangsbeveiliging); niet uit de applicatie aantoonbaar. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "6.08.01",
+      "titel": "Melden van informatiebeveiligings-gebeurtenissen",
+      "thema": "Security Incident Management",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Personele maatregel (Security Incident Management); niet uit de applicatie aantoonbaar.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "7.01.01",
+      "titel": "Fysieke beveiligingszones",
+      "thema": "Fysieke toegang & beveiliging",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Fysieke maatregel (Fysieke toegang & beveiliging); niet uit de applicatie aantoonbaar.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "7.01.02",
+      "titel": "Fysieke beveiligingszones",
+      "thema": "Fysieke toegang & beveiliging",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Fysieke maatregel (Fysieke toegang & beveiliging); niet uit de applicatie aantoonbaar.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "7.02.01",
+      "titel": "Fysieke toegangsbeveiliging",
+      "thema": "Fysieke toegang & beveiliging",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Fysieke maatregel (Fysieke toegang & beveiliging); niet uit de applicatie aantoonbaar.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "7.05.01",
+      "titel": "Beschermen tegen fysieke en omgevingsdreigingen",
+      "thema": "Fysieke toegang & beveiliging",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Fysieke maatregel (Fysieke toegang & beveiliging); niet uit de applicatie aantoonbaar. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "7.06.01",
+      "titel": "Werken in beveiligde zones",
+      "thema": "Bedrijfsmiddelenbeheer",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Fysieke maatregel (Bedrijfsmiddelenbeheer); niet uit de applicatie aantoonbaar. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "7.07.01",
+      "titel": "‘Clear desk’ en ‘clear screen’",
+      "thema": "IT-Compliance",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Fysieke maatregel (IT-Compliance); niet uit de applicatie aantoonbaar.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "7.08.01",
+      "titel": "Plaatsen en beschermen van apparatuur",
+      "thema": "Bedrijfsmiddelenbeheer",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Fysieke maatregel (Bedrijfsmiddelenbeheer); niet uit de applicatie aantoonbaar. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "7.09.01",
+      "titel": "Beveiligen van bedrijfsmiddelen buiten het terrein",
+      "thema": "Bedrijfsmiddelenbeheer",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Fysieke maatregel (Bedrijfsmiddelenbeheer); niet uit de applicatie aantoonbaar. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "7.10.01",
+      "titel": "Opslagmedia",
+      "thema": "Afvoer en hergebruik gegevensdragers",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Fysieke maatregel (Afvoer en hergebruik gegevensdragers); niet uit de applicatie aantoonbaar.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "7.10.02",
+      "titel": "Opslagmedia",
+      "thema": "Afvoer en hergebruik gegevensdragers",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Fysieke maatregel (Afvoer en hergebruik gegevensdragers); niet uit de applicatie aantoonbaar.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "7.10.03",
+      "titel": "Opslagmedia",
+      "thema": "Afvoer en hergebruik gegevensdragers",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Fysieke maatregel (Afvoer en hergebruik gegevensdragers); niet uit de applicatie aantoonbaar.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "7.11.01",
+      "titel": "Nutsvoorzieningen",
+      "thema": "Bedrijfsmiddelenbeheer",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Fysieke maatregel (Bedrijfsmiddelenbeheer); niet uit de applicatie aantoonbaar. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "7.12.01",
+      "titel": "Beveiligen van bekabeling",
+      "thema": "Fysieke toegang & beveiliging",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Fysieke maatregel (Fysieke toegang & beveiliging); niet uit de applicatie aantoonbaar. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "7.13.01",
+      "titel": "Onderhoud van apparatuur",
+      "thema": "Bedrijfsmiddelenbeheer",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Fysieke maatregel (Bedrijfsmiddelenbeheer); niet uit de applicatie aantoonbaar. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "7.14.01",
+      "titel": "Veilig verwijderen of hergebruiken van apparatuur",
+      "thema": "Afvoer en hergebruik gegevensdragers",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Fysieke maatregel (Afvoer en hergebruik gegevensdragers); niet uit de applicatie aantoonbaar. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.01.01",
+      "titel": "User endpoint devices",
+      "thema": "Mobile Device Management",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Technologische maatregel die bij een gekochte applicatie in de infrastructuur, de werkplek of het proces ligt (Mobile Device Management), niet in de applicatieconfiguratie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.01.02",
+      "titel": "User endpoint devices",
+      "thema": "Mobile Device Management",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Technologische maatregel die bij een gekochte applicatie in de infrastructuur, de werkplek of het proces ligt (Mobile Device Management), niet in de applicatieconfiguratie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.02.01",
+      "titel": "Speciale toegangsrechten",
+      "thema": "Logische toegangsbeveiliging",
+      "soort": [
+        "A",
+        "B"
+      ],
+      "bron": "eigen",
+      "bewijs": "Lijst van accounts met beheerrol of speciale bevoegdheid; in de log: gebruik van die bevoegdheden. De kwartaalbeoordeling zelf is proces (D).",
+      "asvs": "V4.3",
+      "motivering": "Opzet en bestaan komen uit de applicatie; de beoordeling niet.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.03.01",
+      "titel": "Beperking toegang tot informatie",
+      "thema": "Logische toegangsbeveiliging",
+      "soort": [
+        "A"
+      ],
+      "bron": "eigen",
+      "bewijs": "Autorisatiemodel voor informatie met specifiek belang: afgeschermde zaaktypen of vertrouwelijkheidsniveaus en welke rollen daarbij mogen.",
+      "asvs": "V4.1",
+      "motivering": "Isolatie van gevoelige informatie is in een zaaksysteem een instelling.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.03.02",
+      "titel": "Beperking toegang tot informatie",
+      "thema": "Logische toegangsbeveiliging",
+      "soort": [
+        "A",
+        "B"
+      ],
+      "bron": "eigen",
+      "bewijs": "Rollenmatrix op need-to-know; in de log: toegang tot afgeschermde zaken door rollen die dat niet nodig hebben.",
+      "asvs": "V4.1, V4.2",
+      "motivering": "De matrix bewijst de opzet; de log laat zien of de afscherming standhoudt.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.04.01",
+      "titel": "Toegangsbeveiliging op broncode",
+      "thema": "Logische toegangsbeveiliging",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Broncode is bij een gekocht pakket niet van de organisatie; bij zelfbouw is dit C (leverancier of eigen ontwikkelteam).",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.05.01",
+      "titel": "Beveiligde authenticatie",
+      "thema": "Logische toegangsbeveiliging",
+      "soort": [
+        "A",
+        "B"
+      ],
+      "bron": "eigen",
+      "bewijs": "Inloginstellingen: MFA, sessieduur en inactiviteitsvergrendeling, lockout na mislukte pogingen, neutrale foutmeldingen; leveranciersaccounts met einddatum en rechten; in de log: inlogpogingen en leveranciersgebruik.",
+      "asvs": "V2, V3",
+      "motivering": "De BIO2-tekst gaat over leverancierstoegang; de ISO-maatregel over beveiligde authenticatie in het algemeen. Beide zijn instelling plus log.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.06.01",
+      "titel": "Capaciteitsbeheer",
+      "thema": "IT-Compliance",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Technologische maatregel die bij een gekochte applicatie in de infrastructuur, de werkplek of het proces ligt (IT-Compliance), niet in de applicatieconfiguratie. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.07.01",
+      "titel": "Bescherming tegen malware",
+      "thema": "Vulnerability & patchmanagement",
+      "soort": [
+        "A",
+        "C"
+      ],
+      "bron": "eigen",
+      "bewijs": "Instelling dat uploads en downloads door de malwarescan gaan; bij een SaaS-dienst de verklaring van de leverancier.",
+      "asvs": "V12.4",
+      "motivering": "Een zaaksysteem ontvangt bestanden van buiten; of die gescand worden is een instelling of een dienstbelofte.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.07.02",
+      "titel": "Bescherming tegen malware",
+      "thema": "Vulnerability & patchmanagement",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Technologische maatregel die bij een gekochte applicatie in de infrastructuur, de werkplek of het proces ligt (Vulnerability & patchmanagement), niet in de applicatieconfiguratie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.07.03",
+      "titel": "Bescherming tegen malware",
+      "thema": "Vulnerability & patchmanagement",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Technologische maatregel die bij een gekochte applicatie in de infrastructuur, de werkplek of het proces ligt (Vulnerability & patchmanagement), niet in de applicatieconfiguratie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.07.04",
+      "titel": "Bescherming tegen malware",
+      "thema": "Vulnerability & patchmanagement",
+      "soort": [
+        "C"
+      ],
+      "bron": "leverancier",
+      "bewijs": "Verklaring of rapport van de leverancier dat ontvangen bestanden gescand worden voor opslag.",
+      "asvs": "",
+      "motivering": "Bij een gehoste applicatie ligt de scan bij de leverancier.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.08.01",
+      "titel": "Beheer van technische kwetsbaarheden",
+      "thema": "Vulnerability & patchmanagement",
+      "soort": [
+        "A",
+        "C"
+      ],
+      "bron": "leverancier",
+      "bewijs": "Versienummer in de applicatie tegen de laatste release van de leverancier; releasenotes en patch-SLA van de leverancier.",
+      "asvs": "V14.2",
+      "motivering": "Of de applicatie bij is, is deterministisch te zien zodra de releaselijst bekend is.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.08.02",
+      "titel": "Beheer van technische kwetsbaarheden",
+      "thema": "Vulnerability & patchmanagement",
+      "soort": [
+        "C"
+      ],
+      "bron": "leverancier",
+      "bewijs": "Patchbeleid en risicoafweging van de leverancier; eigen risicoafweging bij uitstel (D).",
+      "asvs": "",
+      "motivering": "De afweging zelf is proces; het beleid van de leverancier is een document.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.08.03",
+      "titel": "Beheer van technische kwetsbaarheden",
+      "thema": "Vulnerability & patchmanagement",
+      "soort": [
+        "C"
+      ],
+      "bron": "leverancier",
+      "bewijs": "Als 8.08.02: welke mitigerende maatregelen de leverancier neemt als een patch niet binnen een week kan.",
+      "asvs": "",
+      "motivering": "Zie 8.08.02.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.08.04",
+      "titel": "Beheer van technische kwetsbaarheden",
+      "thema": "Vulnerability & patchmanagement",
+      "soort": [
+        "C"
+      ],
+      "bron": "leverancier",
+      "bewijs": "Recent pentest- of kwetsbaarheidsrapport over de applicatie, met scope en datum.",
+      "asvs": "",
+      "motivering": "Een rapport is document-bewijs; het instrument registreert datum en scope, niet de inhoud.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.08.05",
+      "titel": "Beheer van technische kwetsbaarheden",
+      "thema": "Vulnerability & patchmanagement",
+      "soort": [
+        "C"
+      ],
+      "bron": "leverancier",
+      "bewijs": "Pentestrapport per release of major update van een internetfacing applicatie.",
+      "asvs": "",
+      "motivering": "Zie 8.08.04.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.08.06",
+      "titel": "Beheer van technische kwetsbaarheden",
+      "thema": "Vulnerability & patchmanagement",
+      "soort": [
+        "C"
+      ],
+      "bron": "leverancier",
+      "bewijs": "Gepubliceerde CVD-procedure van de leverancier; de eigen CVD-procedure is D.",
+      "asvs": "",
+      "motivering": "Bij een gekocht pakket komt een kwetsbaarheidsmelding bij de leverancier binnen.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.09.01",
+      "titel": "Configuratiebeheer",
+      "thema": "Vulnerability & patchmanagement",
+      "soort": [
+        "A"
+      ],
+      "bron": "eigen",
+      "bewijs": "De configuratie-export zelf, als vastgelegde baseline; een tweede export laat afwijkingen zien.",
+      "asvs": "V14.1",
+      "motivering": "Configuratiebeheer is precies wat een export bewijst: dit is de stand, en dit is er sindsdien veranderd.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.10.01",
+      "titel": "Wissen van informatie",
+      "thema": "Afvoer en hergebruik gegevensdragers",
+      "soort": [
+        "A",
+        "B"
+      ],
+      "bron": "eigen",
+      "bewijs": "Vernietigings- en retentie-instellingen; in de log: uitgevoerde vernietigingsacties met resultaat.",
+      "asvs": "",
+      "motivering": "Wissen van informatie is in een zaaksysteem een geconfigureerde en gelogde handeling.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.11.01",
+      "titel": "Maskeren van gegevens",
+      "thema": "IT-Compliance",
+      "soort": [
+        "C"
+      ],
+      "bron": "eigen",
+      "bewijs": "Schermafbeelding van maskering of pseudonimisering waar de applicatie die toepast (bijvoorbeeld BSN in overzichten, testomgeving).",
+      "asvs": "V8.3",
+      "motivering": "Niet elk pakket kent maskering; waar het bestaat is het een instelling, anders niet aantoonbaar.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.12.01",
+      "titel": "Voorkomen van gegevenslekken (data leakage prevention)",
+      "thema": "IT-Compliance",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Technologische maatregel die bij een gekochte applicatie in de infrastructuur, de werkplek of het proces ligt (IT-Compliance), niet in de applicatieconfiguratie. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.13.01",
+      "titel": "Back-up van informatie",
+      "thema": "Back-up & Recovery",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Technologische maatregel die bij een gekochte applicatie in de infrastructuur, de werkplek of het proces ligt (Back-up & Recovery), niet in de applicatieconfiguratie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.13.02",
+      "titel": "Back-up van informatie",
+      "thema": "Back-up & Recovery",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Technologische maatregel die bij een gekochte applicatie in de infrastructuur, de werkplek of het proces ligt (Back-up & Recovery), niet in de applicatieconfiguratie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.13.03",
+      "titel": "Back-up van informatie",
+      "thema": "Back-up & Recovery",
+      "soort": [
+        "C"
+      ],
+      "bron": "leverancier",
+      "bewijs": "Beschrijving van de back-uplocatie en scheiding van de productielocatie; bij eigen hosting de back-upconfiguratie (A).",
+      "asvs": "",
+      "motivering": "Back-up van een gehoste applicatie is een dienstbelofte van de leverancier.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.13.04",
+      "titel": "Back-up van informatie",
+      "thema": "Back-up & Recovery",
+      "soort": [
+        "C"
+      ],
+      "bron": "eigen",
+      "bewijs": "Verslag van de laatste hersteltest, met datum en uitkomst.",
+      "asvs": "",
+      "motivering": "De test is proces; het verslag is document-bewijs met peildatum.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.14.01",
+      "titel": "Redundantie van informatieverwerkende faciliteiten",
+      "thema": "Business Continuity & Disaster Recovery",
+      "soort": [
+        "C"
+      ],
+      "bron": "leverancier",
+      "bewijs": "Architectuur- of SLA-beschrijving van redundantie bij de leverancier.",
+      "asvs": "",
+      "motivering": "Redundantie zit in de hostinglaag, niet in de applicatieconfiguratie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.15.01",
+      "titel": "Logging",
+      "thema": "Logging & monitoring",
+      "soort": [
+        "B"
+      ],
+      "bron": "eigen",
+      "bewijs": "Logsample waarin elke regel actie, object, resultaat, oorsprong, identiteit en tijdstip bevat.",
+      "asvs": "V7.1",
+      "motivering": "De hardste B: de velden staan in de BIO2-tekst en zijn deterministisch te toetsen op een sample.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.15.02",
+      "titel": "Logging",
+      "thema": "Logging & monitoring",
+      "soort": [
+        "B"
+      ],
+      "bron": "eigen",
+      "bewijs": "Logsample zonder wachtwoorden, tokens, sessiesleutels of burgerservicenummers; dezelfde scan als de anonimizer.",
+      "asvs": "V7.1",
+      "motivering": "Wat er niet in mag staan is deterministisch te vinden.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.15.03",
+      "titel": "Logging",
+      "thema": "Logging & monitoring",
+      "soort": [
+        "A"
+      ],
+      "bron": "eigen",
+      "bewijs": "Instelling welke logtypen aan staan (bijvoorbeeld audittypen per module); het organisatiebrede overzicht is D.",
+      "asvs": "V7.1",
+      "motivering": "Per applicatie is het overzicht een instelling.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.15.04",
+      "titel": "Logging",
+      "thema": "Logging & monitoring",
+      "soort": [
+        "A"
+      ],
+      "bron": "eigen",
+      "bewijs": "Retentie-instelling per logtype; de risicoafweging erachter is D.",
+      "asvs": "V7.1",
+      "motivering": "De termijn staat in de configuratie; of hij risicogericht is, beslist een mens.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.15.05",
+      "titel": "Logging",
+      "thema": "Logging & monitoring",
+      "soort": [
+        "A"
+      ],
+      "bron": "eigen",
+      "bewijs": "Instelling dat de log naar een aparte of onveranderbare opslag gaat en wie de audittabel mag wijzigen; de melding als incident is D.",
+      "asvs": "V7.3",
+      "motivering": "Bescherming van de log is een instelling; de opvolging niet.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.15.06",
+      "titel": "Logging",
+      "thema": "Logging & monitoring",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Technologische maatregel die bij een gekochte applicatie in de infrastructuur, de werkplek of het proces ligt (Logging & monitoring), niet in de applicatieconfiguratie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.16.01",
+      "titel": "Monitoren van activiteiten",
+      "thema": "Logging & monitoring",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Technologische maatregel die bij een gekochte applicatie in de infrastructuur, de werkplek of het proces ligt (Logging & monitoring), niet in de applicatieconfiguratie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.16.02",
+      "titel": "Monitoren van activiteiten",
+      "thema": "Logging & monitoring",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Technologische maatregel die bij een gekochte applicatie in de infrastructuur, de werkplek of het proces ligt (Logging & monitoring), niet in de applicatieconfiguratie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.16.03",
+      "titel": "Monitoren van activiteiten",
+      "thema": "Logging & monitoring",
+      "soort": [
+        "C"
+      ],
+      "bron": "eigen",
+      "bewijs": "Schermafbeelding of exportregel die laat zien dat de applicatielog naar de SIEM gaat; de monitoring zelf is landschap (security-posture-tool).",
+      "asvs": "",
+      "motivering": "Applicatiecheck ziet alleen of de aansluiting er is.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.16.04",
+      "titel": "Monitoren van activiteiten",
+      "thema": "Logging & monitoring",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Technologische maatregel die bij een gekochte applicatie in de infrastructuur, de werkplek of het proces ligt (Logging & monitoring), niet in de applicatieconfiguratie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.17.01",
+      "titel": "Kloksynchronisatie",
+      "thema": "IT-Compliance",
+      "soort": [
+        "B"
+      ],
+      "bron": "eigen",
+      "bewijs": "Logsample met tijdstempels in een eenduidig formaat met tijdzone, in monotone volgorde, zonder onverklaarbare sprongen ten opzichte van de exporttijd.",
+      "asvs": "V7.1",
+      "motivering": "Kloksynchronisatie is alleen uit gedrag aantoonbaar; de NTP-instelling is infrastructuur.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.18.01",
+      "titel": "Gebruik van speciale systeemhulpmiddelen",
+      "thema": "Logische toegangsbeveiliging",
+      "soort": [
+        "A",
+        "B"
+      ],
+      "bron": "eigen",
+      "bewijs": "Wie toegang heeft tot de beheeromgeving (rollen); in de log: gebruik van beheerfuncties.",
+      "asvs": "V4.3",
+      "motivering": "Systeemhulpmiddelen van een applicatie zijn de beheerconsole en de importfuncties.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.18.02",
+      "titel": "Gebruik van speciale systeemhulpmiddelen",
+      "thema": "Logische toegangsbeveiliging",
+      "soort": [
+        "B",
+        "A"
+      ],
+      "bron": "eigen",
+      "bewijs": "Beheeracties in de log; retentie-instelling van dat logtype op minimaal een half jaar.",
+      "asvs": "V7.1",
+      "motivering": "BIO2 noemt de termijn; die is een instelling, het loggen zelf is gedrag.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.19.01",
+      "titel": "Installeren van software op operationele systemen",
+      "thema": "Wijzigingsbeheer",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Technologische maatregel die bij een gekochte applicatie in de infrastructuur, de werkplek of het proces ligt (Wijzigingsbeheer), niet in de applicatieconfiguratie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.20.01",
+      "titel": "Beveiliging netwerkcomponenten",
+      "thema": "Netwerkbeveiliging",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Technologische maatregel die bij een gekochte applicatie in de infrastructuur, de werkplek of het proces ligt (Netwerkbeveiliging), niet in de applicatieconfiguratie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.20.02",
+      "titel": "Beveiliging netwerkcomponenten",
+      "thema": "Netwerkbeveiliging",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Technologische maatregel die bij een gekochte applicatie in de infrastructuur, de werkplek of het proces ligt (Netwerkbeveiliging), niet in de applicatieconfiguratie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.21.01",
+      "titel": "Beveiliging van netwerkdiensten",
+      "thema": "Netwerkbeveiliging",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Technologische maatregel die bij een gekochte applicatie in de infrastructuur, de werkplek of het proces ligt (Netwerkbeveiliging), niet in de applicatieconfiguratie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.21.02",
+      "titel": "Beveiliging van netwerkdiensten",
+      "thema": "Netwerkbeveiliging",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Technologische maatregel die bij een gekochte applicatie in de infrastructuur, de werkplek of het proces ligt (Netwerkbeveiliging), niet in de applicatieconfiguratie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.21.03",
+      "titel": "Beveiliging van netwerkdiensten",
+      "thema": "Netwerkbeveiliging",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Technologische maatregel die bij een gekochte applicatie in de infrastructuur, de werkplek of het proces ligt (Netwerkbeveiliging), niet in de applicatieconfiguratie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.21.04",
+      "titel": "Beveiliging van netwerkdiensten",
+      "thema": "Netwerkbeveiliging",
+      "soort": [
+        "A"
+      ],
+      "bron": "eigen",
+      "bewijs": "Transportversleuteling: alleen HTTPS, TLS-versies en cipher-instellingen, HSTS; extern toetsbaar met een TLS-scan.",
+      "asvs": "V9.1",
+      "motivering": "Voor een webapplicatie is versleuteld transport een instelling die je ook van buiten kunt meten.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.22.01",
+      "titel": "Netwerksegmentatie",
+      "thema": "Netwerkbeveiliging",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Technologische maatregel die bij een gekochte applicatie in de infrastructuur, de werkplek of het proces ligt (Netwerkbeveiliging), niet in de applicatieconfiguratie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.23.01",
+      "titel": "Toepassen van webfilters",
+      "thema": "Netwerkbeveiliging",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Technologische maatregel die bij een gekochte applicatie in de infrastructuur, de werkplek of het proces ligt (Netwerkbeveiliging), niet in de applicatieconfiguratie. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.24.01",
+      "titel": "Gebruik van cryptografie",
+      "thema": "Cryptografie",
+      "soort": [
+        "A",
+        "C"
+      ],
+      "bron": "eigen",
+      "bewijs": "Encryptie-instellingen (opslag, transport, algoritmen, sleutelbeheer bij de leverancier); het cryptografiebeleid is D.",
+      "asvs": "V6",
+      "motivering": "Het beleid is organisatie; wat de applicatie toepast is configuratie of een leveranciersverklaring.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.25.01",
+      "titel": "Beveiligen tijdens de ontwikkelcyclus",
+      "thema": "Secure Software Development",
+      "soort": [
+        "C"
+      ],
+      "bron": "leverancier",
+      "bewijs": "Verklaring of certificering van de leverancier over de beveiligde ontwikkelcyclus (SSDLC).",
+      "asvs": "",
+      "motivering": "Bij een gekocht pakket ligt de ontwikkelcyclus bij de leverancier.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.26.01",
+      "titel": "Toepassingsbeveiligingseisen",
+      "thema": "Secure Software Development",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Technologische maatregel die bij een gekochte applicatie in de infrastructuur, de werkplek of het proces ligt (Secure Software Development), niet in de applicatieconfiguratie. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.27.01",
+      "titel": "Veilige systeemarchitectuur en technische uitgangspunten",
+      "thema": "Secure Software Development",
+      "soort": [
+        "C"
+      ],
+      "bron": "leverancier",
+      "bewijs": "Architectuurbeschrijving of verklaring over security by design en by default.",
+      "asvs": "",
+      "motivering": "Zie 8.25.01.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.28.01",
+      "titel": "Veilig coderen",
+      "thema": "Secure Software Development",
+      "soort": [
+        "C"
+      ],
+      "bron": "leverancier",
+      "bewijs": "Verklaring over veilig coderen (richtlijnen, code review, statische analyse).",
+      "asvs": "",
+      "motivering": "Zie 8.25.01.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.29.01",
+      "titel": "Testen van de beveiliging tijdens ontwikkeling en acceptatie",
+      "thema": "Wijzigingsbeheer",
+      "soort": [
+        "C"
+      ],
+      "bron": "eigen",
+      "bewijs": "Testverslag van de laatste acceptatietest, met datum en resultaten.",
+      "asvs": "",
+      "motivering": "Het verslag is document-bewijs; de methodiek is proces.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.30.01",
+      "titel": "Uitbestede systeemontwikkeling",
+      "thema": "Secure Software Development",
+      "soort": [
+        "C"
+      ],
+      "bron": "leverancier",
+      "bewijs": "Contractuele bepaling of verklaring dat de interne ontwikkelmaatregelen gelden voor uitbestede ontwikkeling.",
+      "asvs": "",
+      "motivering": "Zie 8.25.01.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.31.01",
+      "titel": "Scheiding van ontwikkel-, test- en productieomgevingen",
+      "thema": "Wijzigingsbeheer",
+      "soort": [
+        "A",
+        "C"
+      ],
+      "bron": "eigen",
+      "bewijs": "Aanwezigheid en instellingen van een gescheiden testomgeving (productievlag, koppelingen); afwijkingen met goedkeuring zijn D.",
+      "asvs": "",
+      "motivering": "De scheiding is aantoonbaar als omgeving; de discipline is proces.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.31.02",
+      "titel": "Scheiding van ontwikkel-, test- en productieomgevingen",
+      "thema": "Wijzigingsbeheer",
+      "soort": [
+        "C"
+      ],
+      "bron": "eigen",
+      "bewijs": "Testverslag bij significante wijzigingen; zie 8.29.01.",
+      "asvs": "",
+      "motivering": "Zie 8.31.01.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.32.01",
+      "titel": "Wijzigingsbeheer",
+      "thema": "Wijzigingsbeheer",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Technologische maatregel die bij een gekochte applicatie in de infrastructuur, de werkplek of het proces ligt (Wijzigingsbeheer), niet in de applicatieconfiguratie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.32.02",
+      "titel": "Wijzigingsbeheer",
+      "thema": "Wijzigingsbeheer",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Technologische maatregel die bij een gekochte applicatie in de infrastructuur, de werkplek of het proces ligt (Wijzigingsbeheer), niet in de applicatieconfiguratie.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.33.01",
+      "titel": "Testgegevens",
+      "thema": "Wijzigingsbeheer",
+      "soort": [
+        "C"
+      ],
+      "bron": "eigen",
+      "bewijs": "Schermafbeelding of instelling die laat zien dat testgegevens geanonimiseerd of synthetisch zijn.",
+      "asvs": "",
+      "motivering": "Waar de applicatie anonimisering voor test ondersteunt is het een instelling; anders niet aantoonbaar.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "8.34.01",
+      "titel": "Bescherming van informatiesystemen tijdens audits",
+      "thema": "IT-Compliance",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Technologische maatregel die bij een gekochte applicatie in de infrastructuur, de werkplek of het proces ligt (IT-Compliance), niet in de applicatieconfiguratie. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt.",
+      "status": "voorlopig"
+    },
+    {
+      "id": "5.24.08",
+      "titel": "Coordinated Vulnerability Disclosure",
+      "thema": "Overig",
+      "soort": [
+        "D"
+      ],
+      "bron": "nvt",
+      "bewijs": "",
+      "asvs": "",
+      "motivering": "Organisatorische maatregel (Overig); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
+      "status": "voorlopig"
+    }
+  ]
+}
