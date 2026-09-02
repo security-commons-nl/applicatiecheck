@@ -24,10 +24,11 @@ def test_titels_volgen_de_bron():
 
     Zestig van de 148 titels in normen dragen nog de afbreekregels van de oorspronkelijke CIP-tabel
     ("Rollen en verantwoordelijkheden bij \ninformatiebeveiliging"). Hier staan ze op een regel, want een
-    titel met een harde newline is niet te tonen in een tabel. Wordt normen opgeschoond, dan blijft deze
-    test groen; de vingerafdruk bewaakt de inhoud byte-exact.
+    titel met een harde newline is niet te tonen in een tabel. Twee titels dragen daarnaast een losse
+    afsluitende apostrof ("User endpoint devices'"); die valt onder dezelfde normalisatie. Wordt normen
+    opgeschoond, dan blijft deze test groen; de vingerafdruk bewaakt de inhoud byte-exact.
     """
-    plat = lambda t: re.sub(r"\s+", " ", t).strip()
+    plat = lambda t: re.sub(r"\s+", " ", t).strip().rstrip("'")
     titels = {m["id"]: m["titel"] for m in BIO2["maatregelen"]}
     for r in BEWIJS["maatregelen"]:
         assert plat(r["titel"]) == plat(titels[r["id"]]), f"{r['id']}: titel wijkt af van de bron"
