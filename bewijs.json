@@ -1,11 +1,14 @@
 {
   "titel": "Bewijssoort per BIO2-overheidsmaatregel voor een gekochte applicatie",
-  "toelichting": "Per overheidsmaatregel: uit welk soort bewijs een applicatie hem kan aantonen (A, B, C) of dat het bewijs buiten de applicatie ligt (D). Kader: CIP BIO Thema-uitwerking Softwarepakketten (gekochte applicatie); ASVS-verwijzingen via OpenCRE als aanwijzing wat het bewijs moet bevatten. Uitgangspunt is een applicatie als SaaS bij de leverancier met SSO via de centrale identity provider; eigen hosting of lokale authenticatie staat waar het uitmaakt in de motivering. Status bevestigd: per familie langsgelopen op 02-09-2026 en dezelfde dag naast de CIP Thema-uitwerking Softwarepakketten v2.0 gelegd (veld cip).",
+  "toelichting": "Per overheidsmaatregel van BIO 2.0 (nummer en titel; de tekst staat bij het CIP, zie bron_bio2): uit welk soort bewijs een applicatie hem kan aantonen (A, B, C) of dat het bewijs buiten de applicatie ligt (D). Kader: CIP BIO Thema-uitwerking Softwarepakketten (gekochte applicatie); ASVS-verwijzingen via OpenCRE als aanwijzing wat het bewijs moet bevatten. Uitgangspunt is een applicatie als SaaS bij de leverancier met SSO via de centrale identity provider; eigen hosting of lokale authenticatie staat waar het uitmaakt in de motivering. Status bevestigd: per familie langsgelopen op 02-09-2026 en dezelfde dag naast de CIP Thema-uitwerking Softwarepakketten v2.0 gelegd (veld cip).",
   "peildatum": "2026-09-02",
   "bron_bio2": {
     "bestand": "bronnen/bio2.json",
+    "kader": "BIO 2.0",
     "versie": "BIO2 v1.3 definitief - 9 januari 2026",
-    "commit": "0d2de8b9c460f9fa9e17521006196d7f337e7a4a"
+    "herkomst": "security-commons-nl/normen, bio2.json",
+    "vingerafdruk": "143d785a8931d19f57f59417a7d1eca27ffe205b052e50c196f630c5887456f0",
+    "let_op": "Alleen nummer, titel en thema. De tekst van de overheidsmaatregel staat er niet bij: het CIP publiceert onder CC BY-NC-SA 4.0 (besluit 02-09-2026). Wie de tekst nodig heeft, gaat naar de bron."
   },
   "soorten": {
     "A": "Configuratie-export: wat is ingesteld. Regel per veld, parser per applicatie.",

@@ -2,9 +2,9 @@
 
 Van de 148 overheidsmaatregelen in BIO2 kan een gekochte applicatie er 33 geheel of gedeeltelijk zelf aantonen uit configuratie (A) of log (B). Voor 21 ligt het bewijs in een document of schermafbeelding (C), en 94 liggen buiten de applicatie (D). Peildatum 2026-09-02; status van elke rij: *bevestigd*.
 
-> Per overheidsmaatregel: uit welk soort bewijs een applicatie hem kan aantonen (A, B, C) of dat het bewijs buiten de applicatie ligt (D). Kader: CIP BIO Thema-uitwerking Softwarepakketten (gekochte applicatie); ASVS-verwijzingen via OpenCRE als aanwijzing wat het bewijs moet bevatten. Uitgangspunt is een applicatie als SaaS bij de leverancier met SSO via de centrale identity provider; eigen hosting of lokale authenticatie staat waar het uitmaakt in de motivering. Status bevestigd: per familie langsgelopen op 02-09-2026 en dezelfde dag naast de CIP Thema-uitwerking Softwarepakketten v2.0 gelegd (veld cip).
+> Per overheidsmaatregel van BIO 2.0 (nummer en titel; de tekst staat bij het CIP, zie bron_bio2): uit welk soort bewijs een applicatie hem kan aantonen (A, B, C) of dat het bewijs buiten de applicatie ligt (D). Kader: CIP BIO Thema-uitwerking Softwarepakketten (gekochte applicatie); ASVS-verwijzingen via OpenCRE als aanwijzing wat het bewijs moet bevatten. Uitgangspunt is een applicatie als SaaS bij de leverancier met SSO via de centrale identity provider; eigen hosting of lokale authenticatie staat waar het uitmaakt in de motivering. Status bevestigd: per familie langsgelopen op 02-09-2026 en dezelfde dag naast de CIP Thema-uitwerking Softwarepakketten v2.0 gelegd (veld cip).
 
-Bron van de maatregelen: `bronnen/bio2.json`, BIO2 v1.3 definitief - 9 januari 2026 (cisochat, commit `0d2de8b9`). De teksten van de maatregelen staan daar; hier staan nummer, titel en de indeling.
+Bron van de maatregelen: `bronnen/bio2.json`, BIO2 v1.3 definitief - 9 januari 2026 (kopie uit [normen](https://github.com/security-commons-nl/normen), vingerafdruk `143d785a8931`). Hier staan nummer, titel, thema en de indeling; de tekst van een overheidsmaatregel staat bij het CIP (CC BY-NC-SA), niet in de commons.
 
 Kolom CIP: het object uit de BIO Thema-uitwerking Softwarepakketten (2.0 definitief, mei 2026 (BIO2 1.3 verwerkt)) dat de maatregel raakt; B = beleid, U = uitvoering, C = control. Alleen objectnummers, geen overgenomen tekst (CC BY-NC-SA).
 

@@ -48,8 +48,9 @@ def bouw(data: dict) -> str:
         "> " + data["toelichting"],
         "",
         f"Bron van de maatregelen: `{data['bron_bio2']['bestand']}`, {data['bron_bio2']['versie']} "
-        f"(cisochat, commit `{data['bron_bio2']['commit'][:8]}`). De teksten van de maatregelen staan daar; "
-        "hier staan nummer, titel en de indeling.",
+        f"(kopie uit [normen](https://github.com/security-commons-nl/normen), vingerafdruk "
+        f"`{data['bron_bio2']['vingerafdruk'][:12]}`). Hier staan nummer, titel, thema en de indeling; de "
+        "tekst van een overheidsmaatregel staat bij het CIP (CC BY-NC-SA), niet in de commons.",
         "",
         f"Kolom CIP: het object uit de {data['bron_cip']['titel']} ({data['bron_cip']['versie']}) dat de maatregel "
         "raakt; B = beleid, U = uitvoering, C = control. Alleen objectnummers, geen overgenomen tekst (CC BY-NC-SA).",

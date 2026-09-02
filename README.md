@@ -38,7 +38,7 @@ applicatie daaraan voldoet wordt nu getoetst met een vragenlijst aan de beheerde
 antwoord is dan een vinkje, en een vinkje is geen bewijs.
 
 De applicatie zelf weet het beter. Een configuratie-export zegt wat er is ingesteld. Een logfragment zegt
-wat er gebeurt. Wie die twee naast de BIO2-tekst legt, kan voor een deel van de maatregelen zonder
+wat er gebeurt. Wie die twee naast de maatregel legt, kan voor een deel van de maatregelen zonder
 interpretatie zeggen: dit is aangetoond, dit is gedeeltelijk aangetoond, en dit is uit de applicatie niet
 aantoonbaar. Dat laatste hardop zeggen is net zo veel waard als het eerste.
 
@@ -53,7 +53,7 @@ Het landschap is al bezet, en dit instrument past ertussen zonder iets te dubbel
 
 | Vraag | Woont in | Applicatiecheck doet dat niet |
 |---|---|---|
-| Wat zegt mijn Entra, firewall en SIEM over mijn organisatie? | [security-posture-tool](https://github.com/security-commons-nl/security-posture-tool) | De eenheid is hier één applicatie, niet het landschap. |
+| Wat zegt mijn Entra, firewall en SIEM over mijn organisatie? | [aanvalspaden/meting](https://github.com/security-commons-nl/aanvalspaden) | De eenheid is hier één applicatie, niet het landschap. |
 | Hoe beheer ik mijn ISMS, risico's en de bestuurlijke rapportage? | je eigen managementsysteem | Applicatiecheck levert bewijs als dossier; de commons houdt geen register bij. |
 | Hoe maak ik een héle norm uitvoerbaar, met een regeltaal? | [policy-as-code](https://github.com/security-commons-nl/policy-as-code) | Dit is de eerste concrete uitwerking van dat idee, voor één kader en één eenheid. |
 | Hoe richt ik logging, toegang of cryptografie goed in? | [kennisbank](https://security-commons-nl.github.io/kennisbank/) | Applicatiecheck stelt vast, de kennisbank legt uit hoe. |
@@ -79,7 +79,7 @@ het bewijs in wat er gebeurd is, niet in wat er is ingesteld.
 Een logsample is een **structuurtoets**, geen gedragsmeting. De laatste vierentwintig uur of de laatste
 duizend regels zijn genoeg om te zien of de verplichte velden er staan, of de tijdstempel bruikbaar is en
 of er geen wachtwoorden of burgerservicenummers in de log lekken. Of er ook naar de log wordt gekeken (8.16)
-en of de retentie klopt over maanden, is werk voor de SIEM en voor security-posture-tool.
+en of de retentie klopt over maanden, is werk voor de SIEM en voor de meting in `aanvalspaden`.
 
 ## Drie ontwerpregels
 
@@ -97,17 +97,18 @@ en of de retentie klopt over maanden, is werk voor de SIEM en voor security-post
 
 ## Wat eruit komt
 
-Een dossier per applicatie, per maatregel: de BIO2-tekst woordelijk, de bewijssoort, het bewijs met een
-hash en een peildatum, de uitkomst van de regel, een verantwoordelijke, en waar de uitkomst afwijkt een
-onderbouwing (comply or explain). Het dossier is te bewaren als bestand en uit te draaien, zoals bij de
+Een dossier per applicatie, per maatregel: het nummer en de titel uit BIO 2.0, de bewijssoort, het bewijs
+met een hash en een peildatum, de uitkomst van de regel, een verantwoordelijke, en waar de uitkomst afwijkt
+een onderbouwing (comply or explain). De tekst van de maatregel staat er niet bij: die is van het CIP
+(CC BY-NC-SA) en wordt niet meegepubliceerd; het nummer verwijst naar de bron. Het dossier is te bewaren als bestand en uit te draaien, zoals bij de
 CSIR Assessment Tool. Wat de applicatie niet kan aantonen staat er ook in, met de reden, zodat het dossier
 compleet is en niet alleen flatteus.
 
 ## Hoe het gebouwd wordt
 
-- **Eén bron voor de BIO2-tekst:** `cisochat/data/bio2.json`, gekopieerd met de commit-hash van de bron erin,
-  zoals `aanvalspaden/mappingen/bronnen/` dat doet. De tekst van een maatregel wordt hier nooit met de hand
-  overgetypt.
+- **Eén bron voor de maatregelen:** de repo [`normen`](https://github.com/security-commons-nl/normen),
+  gekopieerd met `tools/haal_normen.py` en met de vingerafdruk van de bron erin; `--check` blokkeert in CI
+  als de kopie achterloopt. Alleen nummer, titel en thema; de tekst blijft bij het CIP.
 - **Regels als data:** per maatregel een leesbare regel in JSON (welke velden, welke waarden, welke
   bewijssoort), met een referentie-implementatie in Python en dezelfde regel in de pagina. Een test bewaakt
   dat beide hetzelfde antwoord geven.
