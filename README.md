@@ -54,7 +54,7 @@ Het landschap is al bezet, en dit instrument past ertussen zonder iets te dubbel
 | Vraag | Woont in | Applicatiecheck doet dat niet |
 |---|---|---|
 | Wat zegt mijn Entra, firewall en SIEM over mijn organisatie? | [security-posture-tool](https://github.com/security-commons-nl/security-posture-tool) | De eenheid is hier één applicatie, niet het landschap. |
-| Hoe beheer ik mijn ISMS, risico's en de bestuurlijke rapportage? | [grc-platform](https://github.com/security-commons-nl/grc-platform) | Applicatiecheck levert bewijs; het GRC-platform beheert het. |
+| Hoe beheer ik mijn ISMS, risico's en de bestuurlijke rapportage? | je eigen managementsysteem | Applicatiecheck levert bewijs als dossier; de commons houdt geen register bij. |
 | Hoe maak ik een héle norm uitvoerbaar, met een regeltaal? | [policy-as-code](https://github.com/security-commons-nl/policy-as-code) | Dit is de eerste concrete uitwerking van dat idee, voor één kader en één eenheid. |
 | Hoe richt ik logging, toegang of cryptografie goed in? | [kennisbank](https://security-commons-nl.github.io/kennisbank/) | Applicatiecheck stelt vast, de kennisbank legt uit hoe. |
 
