@@ -1,6 +1,6 @@
 # Indeling: welk bewijs per maatregel
 
-Van de 148 overheidsmaatregelen in BIO2 kan een gekochte applicatie er 32 geheel of gedeeltelijk zelf aantonen uit configuratie (A) of log (B). Voor 21 ligt het bewijs in een document of schermafbeelding (C), en 95 liggen buiten de applicatie (D). Peildatum 2026-09-02; status van elke rij: *bevestigd*.
+Van de 148 overheidsmaatregelen in BIO2 kan een gekochte applicatie er 33 geheel of gedeeltelijk zelf aantonen uit configuratie (A) of log (B). Voor 21 ligt het bewijs in een document of schermafbeelding (C), en 94 liggen buiten de applicatie (D). Peildatum 2026-09-02; status van elke rij: *bevestigd*.
 
 > Per overheidsmaatregel: uit welk soort bewijs een applicatie hem kan aantonen (A, B, C) of dat het bewijs buiten de applicatie ligt (D). Kader: CIP BIO Thema-uitwerking Softwarepakketten (gekochte applicatie); ASVS-verwijzingen via OpenCRE als aanwijzing wat het bewijs moet bevatten. Uitgangspunt is een applicatie als SaaS bij de leverancier met SSO via de centrale identity provider; eigen hosting of lokale authenticatie staat waar het uitmaakt in de motivering. Status bevestigd: per familie langsgelopen op 02-09-2026 en dezelfde dag naast de CIP Thema-uitwerking Softwarepakketten v2.0 gelegd (veld cip).
 
@@ -10,15 +10,16 @@ Kolom CIP: het object uit de BIO Thema-uitwerking Softwarepakketten (2.0 definit
 
 | Soort | Betekenis | Aantal (eerste soort) |
 |---|---|---|
-| **A** | Configuratie-export: wat is ingesteld. Regel per veld, parser per applicatie. | 28 |
+| **A** | Configuratie-export: wat is ingesteld. Regel per veld, parser per applicatie. | 29 |
 | **B** | Logsample: wat er gebeurt. Structuurtoets op de laatste 24 uur of 1000 regels; geen gedragsmeting. | 4 |
 | **C** | Document of schermafbeelding: wat A en B niet raken. AI-extractie, altijd met menselijke bevestiging. | 21 |
-| **D** | Niet uit de applicatie: proces en organisatie. Het instrument zegt dit hardop. | 95 |
+| **D** | Niet uit de applicatie: proces en organisatie. Het instrument zegt dit hardop. | 94 |
 
-## A. Configuratie-export (28)
+## A. Configuratie-export (29)
 
 | Nr | Titel | Soort | Bron | Wat het bewijs moet bevatten | ASVS | CIP | Motivering |
 |---|---|---|---|---|---|---|---|
+| 5.03.01 | Functiescheiding | A | eigen | Rollenexport uit de beheeromgeving plus een door de gebruiker ingevoerde lijst van onverenigbare rolcombinaties; de regel zoekt accounts die twee onverenigbare rollen tegelijk hebben. | V4.1 | U.10 | Functiescheiding is beleid, maar of hij standhoudt staat in de rollenexport. CIP U.10.2: onverenigbare autorisaties zijn geïdentificeerd; die lijst is de invoer, de toets is deterministisch. Bevestigd als A op 02-09-2026. |
 | 5.12.01 | Classificeren van informatie | A | eigen | Classificatieniveaus (vertrouwelijkheidsaanduidingen) zoals geconfigureerd per zaaktype of document, en of ze verplicht zijn. |  |  | Het classificatieschema is organisatie; de vertaling naar niveaus in de applicatie is een instelling. |
 | 5.14.01 | Overdragen van informatie | A | eigen | Koppelingenlijst: welke koppelingen (ZGW/StUF-API's, e-mail, DMS, uitwisselingsdiensten) aan staan, met welke authenticatie en versleuteling per koppeling. | V13 | U.12 | Welke overdracht plaatsvindt en hoe die beveiligd is, staat in de koppelingenconfiguratie; het beleid erachter is D. CIP U.12 (API's, ASVS V13): veilige API's voor import en export, geen sleutels of tokens in URL's; de koppelingenlijst is de klantkant, de API-eigenschappen zijn leverancierskant (C). |
 | 5.15.01 | Toegangsbeveiliging | A | eigen | Instellingen voor toegestane herkomst: SSO-eis via de centrale identity provider, IP- of zonebeperking, apparaatvereiste. | V4 |  | De vertrouwde zone zelf is infrastructuur; wat de applicatie eist van wie binnenkomt staat in de configuratie. |
@@ -83,7 +84,7 @@ Kolom CIP: het object uit de BIO Thema-uitwerking Softwarepakketten (2.0 definit
 | 8.31.02 | Scheiding van ontwikkel-, test- en productieomgevingen | C | eigen | Testverslag bij significante wijzigingen; zie 8.29.01. |  | C.02 | Zie 8.31.01. |
 | 8.33.01 | Testgegevens | C | eigen | Schermafbeelding of instelling die laat zien dat testgegevens geanonimiseerd of synthetisch zijn. |  |  | Waar de applicatie anonimisering voor test ondersteunt is het een instelling; anders niet aantoonbaar. |
 
-## D. Niet uit de applicatie (95)
+## D. Niet uit de applicatie (94)
 
 | Nr | Titel | Thema | CIP | Waarom niet uit de applicatie |
 |---|---|---|---|---|
@@ -91,7 +92,6 @@ Kolom CIP: het object uit de BIO Thema-uitwerking Softwarepakketten (2.0 definit
 | 5.01.02 | Beleidsregels voor informatie beveiliging | IV-beleid |  | Organisatorische maatregel (IV-beleid); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
 | 5.02.01 | Rollen en verantwoordelijkheden bij informatiebeveiliging | IV-beleid |  | Organisatorische maatregel (IV-beleid); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
 | 5.02.02 | Rollen en verantwoordelijkheden bij informatiebeveiliging | IV-beleid |  | Organisatorische maatregel (IV-beleid); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
-| 5.03.01 | Functiescheiding | IV-beleid | U.10 | Organisatorische maatregel (IV-beleid); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt. CIP U.10.2: met taken, verantwoordelijkheden en bevoegdheden zijn onverenigbare autorisaties geïdentificeerd; als die lijst er is, is de toets op de rollenexport deterministisch (kandidaat voor A, zie bouwplan). |
 | 5.04.01 | Managementverantwoordelijkheden | Screening, bewustzijn & opleiding |  | Organisatorische maatregel (Screening, bewustzijn & opleiding); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
 | 5.04.02 | Managementverantwoordelijkheden | Screening, bewustzijn & opleiding |  | Organisatorische maatregel (Screening, bewustzijn & opleiding); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
 | 5.04.03 | Managementverantwoordelijkheden | Screening, bewustzijn & opleiding |  | Organisatorische maatregel (Screening, bewustzijn & opleiding); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |

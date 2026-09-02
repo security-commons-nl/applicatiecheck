@@ -76,12 +76,12 @@
       "titel": "Functiescheiding",
       "thema": "IV-beleid",
       "soort": [
-        "D"
+        "A"
       ],
-      "bron": "nvt",
-      "bewijs": "",
-      "asvs": "",
-      "motivering": "Organisatorische maatregel (IV-beleid); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt. CIP U.10.2: met taken, verantwoordelijkheden en bevoegdheden zijn onverenigbare autorisaties geïdentificeerd; als die lijst er is, is de toets op de rollenexport deterministisch (kandidaat voor A, zie bouwplan).",
+      "bron": "eigen",
+      "bewijs": "Rollenexport uit de beheeromgeving plus een door de gebruiker ingevoerde lijst van onverenigbare rolcombinaties; de regel zoekt accounts die twee onverenigbare rollen tegelijk hebben.",
+      "asvs": "V4.1",
+      "motivering": "Functiescheiding is beleid, maar of hij standhoudt staat in de rollenexport. CIP U.10.2: onverenigbare autorisaties zijn geïdentificeerd; die lijst is de invoer, de toets is deterministisch. Bevestigd als A op 02-09-2026.",
       "status": "bevestigd",
       "cip": "U.10"
     },
