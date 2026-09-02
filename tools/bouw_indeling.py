@@ -51,6 +51,9 @@ def bouw(data: dict) -> str:
         f"(cisochat, commit `{data['bron_bio2']['commit'][:8]}`). De teksten van de maatregelen staan daar; "
         "hier staan nummer, titel en de indeling.",
         "",
+        f"Kolom CIP: het object uit de {data['bron_cip']['titel']} ({data['bron_cip']['versie']}) dat de maatregel "
+        "raakt; B = beleid, U = uitvoering, C = control. Alleen objectnummers, geen overgenomen tekst (CC BY-NC-SA).",
+        "",
         "| Soort | Betekenis | Aantal (eerste soort) |",
         "|---|---|---|",
     ]
@@ -61,16 +64,16 @@ def bouw(data: dict) -> str:
         groep = [r for r in rijen if r["soort"][0] == s]
         regels += [f"## {KOPPEN[s]} ({len(groep)})", ""]
         if s == "D":
-            regels += ["| Nr | Titel | Thema | Waarom niet uit de applicatie |", "|---|---|---|---|"]
+            regels += ["| Nr | Titel | Thema | CIP | Waarom niet uit de applicatie |", "|---|---|---|---|---|"]
             for r in groep:
-                regels.append(f"| {r['id']} | {cel(r['titel'])} | {cel(r['thema'])} | {cel(r['motivering'])} |")
+                regels.append(f"| {r['id']} | {cel(r['titel'])} | {cel(r['thema'])} | {r.get('cip', '')} | {cel(r['motivering'])} |")
         else:
-            regels += ["| Nr | Titel | Soort | Bron | Wat het bewijs moet bevatten | ASVS | Motivering |",
-                       "|---|---|---|---|---|---|---|"]
+            regels += ["| Nr | Titel | Soort | Bron | Wat het bewijs moet bevatten | ASVS | CIP | Motivering |",
+                       "|---|---|---|---|---|---|---|---|"]
             for r in groep:
                 regels.append(
                     f"| {r['id']} | {cel(r['titel'])} | {' + '.join(r['soort'])} | {r['bron']} | "
-                    f"{cel(r['bewijs'])} | {cel(r['asvs'])} | {cel(r['motivering'])} |"
+                    f"{cel(r['bewijs'])} | {cel(r['asvs'])} | {r.get('cip', '')} | {cel(r['motivering'])} |"
                 )
         regels.append("")
     regels += [

@@ -1,6 +1,6 @@
 {
   "titel": "Bewijssoort per BIO2-overheidsmaatregel voor een gekochte applicatie",
-  "toelichting": "Per overheidsmaatregel: uit welk soort bewijs een applicatie hem kan aantonen (A, B, C) of dat het bewijs buiten de applicatie ligt (D). Kader: CIP BIO Thema-uitwerking Softwarepakketten (gekochte applicatie); ASVS-verwijzingen via OpenCRE als aanwijzing wat het bewijs moet bevatten. Uitgangspunt is een applicatie als SaaS bij de leverancier met SSO via de centrale identity provider; eigen hosting of lokale authenticatie staat waar het uitmaakt in de motivering. Status bevestigd: per familie langsgelopen op 02-09-2026; laag 2 (de CIP-tekst ernaast) volgt en kan rijen terugzetten naar voorlopig.",
+  "toelichting": "Per overheidsmaatregel: uit welk soort bewijs een applicatie hem kan aantonen (A, B, C) of dat het bewijs buiten de applicatie ligt (D). Kader: CIP BIO Thema-uitwerking Softwarepakketten (gekochte applicatie); ASVS-verwijzingen via OpenCRE als aanwijzing wat het bewijs moet bevatten. Uitgangspunt is een applicatie als SaaS bij de leverancier met SSO via de centrale identity provider; eigen hosting of lokale authenticatie staat waar het uitmaakt in de motivering. Status bevestigd: per familie langsgelopen op 02-09-2026 en dezelfde dag naast de CIP Thema-uitwerking Softwarepakketten v2.0 gelegd (veld cip).",
   "peildatum": "2026-09-02",
   "bron_bio2": {
     "bestand": "bronnen/bio2.json",
@@ -81,8 +81,9 @@
       "bron": "nvt",
       "bewijs": "",
       "asvs": "",
-      "motivering": "Organisatorische maatregel (IV-beleid); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt.",
-      "status": "bevestigd"
+      "motivering": "Organisatorische maatregel (IV-beleid); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt. CIP U.10.2: met taken, verantwoordelijkheden en bevoegdheden zijn onverenigbare autorisaties geïdentificeerd; als die lijst er is, is de toets op de rollenexport deterministisch (kandidaat voor A, zie bouwplan).",
+      "status": "bevestigd",
+      "cip": "U.10"
     },
     {
       "id": "5.04.01",
@@ -173,7 +174,8 @@
       "bewijs": "",
       "asvs": "",
       "motivering": "Organisatorische maatregel (Informatiebeveiliging binnen projecten); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
-      "status": "bevestigd"
+      "status": "bevestigd",
+      "cip": "U.02"
     },
     {
       "id": "5.09.01",
@@ -249,9 +251,10 @@
       ],
       "bron": "eigen",
       "bewijs": "Koppelingenlijst: welke koppelingen (ZGW/StUF-API's, e-mail, DMS, uitwisselingsdiensten) aan staan, met welke authenticatie en versleuteling per koppeling.",
-      "asvs": "V9.1",
-      "motivering": "Welke overdracht plaatsvindt en hoe die beveiligd is, staat in de koppelingenconfiguratie; het beleid erachter is D.",
-      "status": "bevestigd"
+      "asvs": "V13",
+      "motivering": "Welke overdracht plaatsvindt en hoe die beveiligd is, staat in de koppelingenconfiguratie; het beleid erachter is D. CIP U.12 (API's, ASVS V13): veilige API's voor import en export, geen sleutels of tokens in URL's; de koppelingenlijst is de klantkant, de API-eigenschappen zijn leverancierskant (C).",
+      "status": "bevestigd",
+      "cip": "U.12"
     },
     {
       "id": "5.14.02",
@@ -329,8 +332,9 @@
       "bron": "eigen",
       "bewijs": "Accountlijst: unieke, persoonsgebonden accounts, koppeling aan de centrale identity provider, geen gedeelde accounts; in de log: aanmaken en verwijderen van accounts.",
       "asvs": "V2.1",
-      "motivering": "De tekst in de bron (AdES, registratie internetfacing) wijkt af van de titel; ingedeeld op de ISO-maatregel identiteitsbeheer.",
-      "status": "bevestigd"
+      "motivering": "De tekst in de bron (AdES, registratie internetfacing) wijkt af van de titel; ingedeeld op de ISO-maatregel identiteitsbeheer. CIP U.08.1: gebruikers kunnen veilig worden toegevoegd, verwijderd en bijgewerkt; de accountlijst en de log bewijzen dat.",
+      "status": "bevestigd",
+      "cip": "U.08"
     },
     {
       "id": "5.16.02",
@@ -343,8 +347,9 @@
       "bron": "eigen",
       "bewijs": "Als 5.16.01; daarnaast de registratie van de applicatie als internetfacing voorziening (D, buiten de applicatie).",
       "asvs": "V2.1",
-      "motivering": "Zie 5.16.01.",
-      "status": "bevestigd"
+      "motivering": "Zie 5.16.01. CIP U.08.1: gebruikers kunnen veilig worden toegevoegd, verwijderd en bijgewerkt; de accountlijst en de log bewijzen dat.",
+      "status": "bevestigd",
+      "cip": "U.08"
     },
     {
       "id": "5.17.01",
@@ -357,8 +362,9 @@
       "bron": "eigen",
       "bewijs": "SSO afgedwongen via de centrale identity provider; geen lokale wachtwoordaccounts, of alleen noodaccounts met MFA en einddatum. De MFA-instelling zelf staat bij de identity provider: schermafbeelding van dat beleid (C).",
       "asvs": "V2",
-      "motivering": "Bij een zaaksysteem met SSO dwingt de identity provider MFA af, niet de applicatie; de applicatie bewijst dat er geen weg omheen is. Bij lokale authenticatie geldt de oude lezing: MFA-instelling en inlogs zonder tweede factor in de log.",
-      "status": "bevestigd"
+      "motivering": "Bij een zaaksysteem met SSO dwingt de identity provider MFA af, niet de applicatie; de applicatie bewijst dat er geen weg omheen is. Bij lokale authenticatie geldt de oude lezing: MFA-instelling en inlogs zonder tweede factor in de log. CIP U.08 zegt letterlijk dat dit object voor softwarepakketten alleen relevant is als de onderliggende infrastructuur (de identity provider) er niet in voorziet; dat is de SSO-lezing.",
+      "status": "bevestigd",
+      "cip": "U.08"
     },
     {
       "id": "5.17.02",
@@ -371,8 +377,9 @@
       "bron": "eigen",
       "bewijs": "SSO afgedwongen via de centrale identity provider; geen lokale wachtwoordaccounts, of alleen noodaccounts met MFA en einddatum. De MFA-instelling zelf staat bij de identity provider: schermafbeelding van dat beleid (C).",
       "asvs": "V2",
-      "motivering": "Bij een zaaksysteem met SSO dwingt de identity provider MFA af, niet de applicatie; de applicatie bewijst dat er geen weg omheen is. Bij lokale authenticatie geldt de oude lezing: MFA-instelling en inlogs zonder tweede factor in de log.",
-      "status": "bevestigd"
+      "motivering": "Bij een zaaksysteem met SSO dwingt de identity provider MFA af, niet de applicatie; de applicatie bewijst dat er geen weg omheen is. Bij lokale authenticatie geldt de oude lezing: MFA-instelling en inlogs zonder tweede factor in de log. CIP U.08 zegt letterlijk dat dit object voor softwarepakketten alleen relevant is als de onderliggende infrastructuur (de identity provider) er niet in voorziet; dat is de SSO-lezing.",
+      "status": "bevestigd",
+      "cip": "U.08"
     },
     {
       "id": "5.17.03",
@@ -385,8 +392,9 @@
       "bron": "eigen",
       "bewijs": "SSO afgedwongen via de centrale identity provider; geen lokale wachtwoordaccounts, of alleen noodaccounts met MFA en einddatum. De MFA-instelling zelf staat bij de identity provider: schermafbeelding van dat beleid (C).",
       "asvs": "V2",
-      "motivering": "Bij een zaaksysteem met SSO dwingt de identity provider MFA af, niet de applicatie; de applicatie bewijst dat er geen weg omheen is. Bij lokale authenticatie geldt de oude lezing: MFA-instelling en inlogs zonder tweede factor in de log.",
-      "status": "bevestigd"
+      "motivering": "Bij een zaaksysteem met SSO dwingt de identity provider MFA af, niet de applicatie; de applicatie bewijst dat er geen weg omheen is. Bij lokale authenticatie geldt de oude lezing: MFA-instelling en inlogs zonder tweede factor in de log. CIP U.08 zegt letterlijk dat dit object voor softwarepakketten alleen relevant is als de onderliggende infrastructuur (de identity provider) er niet in voorziet; dat is de SSO-lezing.",
+      "status": "bevestigd",
+      "cip": "U.08"
     },
     {
       "id": "5.18.01",
@@ -399,8 +407,9 @@
       "bron": "eigen",
       "bewijs": "Rollen- en autorisatiematrix (wie mag wat), lijst van accounts met rol; in de log: toekennen en intrekken van rechten, laatste inlog per account (inactieve accounts met rechten). Bron: export uit de beheeromgeving (gebruikers, gebruikersrollen, rechten per zaaktype); bestaat die niet, dan schermafbeelding (C).",
       "asvs": "V4.1",
-      "motivering": "De tekst in de bron herhaalt de MFA-tekst van 5.17; ingedeeld op de ISO-maatregel toegangsrechten.",
-      "status": "bevestigd"
+      "motivering": "De tekst in de bron herhaalt de MFA-tekst van 5.17; ingedeeld op de ISO-maatregel toegangsrechten. CIP U.10: rechten geordend in autorisatiegroepen, scheiding van niet verenigbare autorisaties; de export van groepen en toewijzingen is het bewijs.",
+      "status": "bevestigd",
+      "cip": "U.10"
     },
     {
       "id": "5.18.02",
@@ -413,8 +422,9 @@
       "bron": "eigen",
       "bewijs": "Als 5.18.01; de periodieke beoordeling zelf is proces (D). Bron: export uit de beheeromgeving (gebruikers, gebruikersrollen, rechten per zaaktype); bestaat die niet, dan schermafbeelding (C).",
       "asvs": "V4.1",
-      "motivering": "Zie 5.18.01.",
-      "status": "bevestigd"
+      "motivering": "Zie 5.18.01. CIP U.10: rechten geordend in autorisatiegroepen, scheiding van niet verenigbare autorisaties; de export van groepen en toewijzingen is het bewijs.",
+      "status": "bevestigd",
+      "cip": "U.10"
     },
     {
       "id": "5.19.01",
@@ -427,7 +437,8 @@
       "bewijs": "",
       "asvs": "",
       "motivering": "Organisatorische maatregel (Leveranciersbeheer - Inkoop); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
-      "status": "bevestigd"
+      "status": "bevestigd",
+      "cip": "B.02"
     },
     {
       "id": "5.20.01",
@@ -440,7 +451,8 @@
       "bewijs": "",
       "asvs": "",
       "motivering": "Organisatorische maatregel (Leveranciersbeheer - Inkoop); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
-      "status": "bevestigd"
+      "status": "bevestigd",
+      "cip": "B.02"
     },
     {
       "id": "5.20.02",
@@ -453,7 +465,8 @@
       "bewijs": "",
       "asvs": "",
       "motivering": "Organisatorische maatregel (Leveranciersbeheer - Inkoop); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
-      "status": "bevestigd"
+      "status": "bevestigd",
+      "cip": "B.02"
     },
     {
       "id": "5.20.03",
@@ -465,8 +478,9 @@
       "bron": "leverancier",
       "bewijs": "Assurance-rapport of certificaat van een onafhankelijke derde met een scope die de dienst dekt (ISAE 3402, ISO 27001-certificaat met verklaring van toepasselijkheid, pentestrapport).",
       "asvs": "",
-      "motivering": "De leverancier toont aan; het instrument registreert het bewijs met peildatum en scope.",
-      "status": "bevestigd"
+      "motivering": "De leverancier toont aan; het instrument registreert het bewijs met peildatum en scope. CIP B.02.1 en C.01.3: recht op audit en onafhankelijke auditrapporten als contractafspraak; het rapport zelf is het bewijs.",
+      "status": "bevestigd",
+      "cip": "B.02"
     },
     {
       "id": "5.21.02",
@@ -479,7 +493,8 @@
       "bewijs": "",
       "asvs": "",
       "motivering": "Organisatorische maatregel (Leveranciersbeheer - Inkoop); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
-      "status": "bevestigd"
+      "status": "bevestigd",
+      "cip": "B.02"
     },
     {
       "id": "5.21.03",
@@ -492,7 +507,8 @@
       "bewijs": "",
       "asvs": "",
       "motivering": "Organisatorische maatregel (Leveranciersbeheer - contractbeheer); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
-      "status": "bevestigd"
+      "status": "bevestigd",
+      "cip": "B.02"
     },
     {
       "id": "5.21.04",
@@ -505,7 +521,8 @@
       "bewijs": "",
       "asvs": "",
       "motivering": "Organisatorische maatregel (Leveranciersbeheer - contractbeheer); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
-      "status": "bevestigd"
+      "status": "bevestigd",
+      "cip": "B.02"
     },
     {
       "id": "5.22.01",
@@ -518,7 +535,8 @@
       "bewijs": "",
       "asvs": "",
       "motivering": "Organisatorische maatregel (Leveranciersbeheer - contractbeheer); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
-      "status": "bevestigd"
+      "status": "bevestigd",
+      "cip": "C.01"
     },
     {
       "id": "5.22.02",
@@ -531,7 +549,8 @@
       "bewijs": "",
       "asvs": "",
       "motivering": "Organisatorische maatregel (Leveranciersbeheer - contractbeheer); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
-      "status": "bevestigd"
+      "status": "bevestigd",
+      "cip": "C.01"
     },
     {
       "id": "5.23.01",
@@ -713,7 +732,8 @@
       "bewijs": "",
       "asvs": "",
       "motivering": "Organisatorische maatregel (Business Continuity & Disaster Recovery); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt.",
-      "status": "bevestigd"
+      "status": "bevestigd",
+      "cip": "U.03"
     },
     {
       "id": "5.30.01",
@@ -726,7 +746,8 @@
       "bewijs": "",
       "asvs": "",
       "motivering": "Organisatorische maatregel (Business Continuity & Disaster Recovery); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
-      "status": "bevestigd"
+      "status": "bevestigd",
+      "cip": "U.03"
     },
     {
       "id": "5.30.02",
@@ -739,7 +760,8 @@
       "bewijs": "",
       "asvs": "",
       "motivering": "Organisatorische maatregel (Business Continuity & Disaster Recovery); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
-      "status": "bevestigd"
+      "status": "bevestigd",
+      "cip": "U.03"
     },
     {
       "id": "5.31.01",
@@ -778,8 +800,9 @@
       "bron": "eigen",
       "bewijs": "Bewaartermijnen en vernietigingsregels zoals ingesteld in de applicatie (koppeling aan de selectielijst), en of ze actief zijn.",
       "asvs": "",
-      "motivering": "Voor een zaaksysteem de kern van de Archiefwet; de instelling is aantoonbaar, de toets op werking is proces. Bevestigd als A.",
-      "status": "bevestigd"
+      "motivering": "Voor een zaaksysteem de kern van de Archiefwet; de instelling is aantoonbaar, de toets op werking is proces. Bevestigd als A. CIP U.06.5: gegevens alleen zo lang bewaren als nodig; de retentie-instelling is het bewijs.",
+      "status": "bevestigd",
+      "cip": "U.06"
     },
     {
       "id": "5.34.01",
@@ -1169,8 +1192,9 @@
       "bron": "eigen",
       "bewijs": "Lijst van accounts met beheerrol of speciale bevoegdheid; in de log: gebruik van die bevoegdheden. De kwartaalbeoordeling zelf is proces (D). Bron: export uit de beheeromgeving (gebruikers, gebruikersrollen, rechten per zaaktype); bestaat die niet, dan schermafbeelding (C).",
       "asvs": "V4.3",
-      "motivering": "Opzet en bestaan komen uit de applicatie; de beoordeling niet.",
-      "status": "bevestigd"
+      "motivering": "Opzet en bestaan komen uit de applicatie; de beoordeling niet. CIP U.10: rechten geordend in autorisatiegroepen, scheiding van niet verenigbare autorisaties; de export van groepen en toewijzingen is het bewijs.",
+      "status": "bevestigd",
+      "cip": "U.10"
     },
     {
       "id": "8.03.01",
@@ -1183,7 +1207,8 @@
       "bewijs": "Autorisatiemodel voor informatie met specifiek belang: afgeschermde zaaktypen of vertrouwelijkheidsniveaus en welke rollen daarbij mogen. Bron: export uit de beheeromgeving (gebruikers, gebruikersrollen, rechten per zaaktype); bestaat die niet, dan schermafbeelding (C).",
       "asvs": "V4.1",
       "motivering": "Isolatie van gevoelige informatie is in een zaaksysteem een instelling.",
-      "status": "bevestigd"
+      "status": "bevestigd",
+      "cip": "U.09"
     },
     {
       "id": "8.03.02",
@@ -1196,8 +1221,9 @@
       "bron": "eigen",
       "bewijs": "Rollenmatrix op need-to-know; in de log: toegang tot afgeschermde zaken door rollen die dat niet nodig hebben. Bron: export uit de beheeromgeving (gebruikers, gebruikersrollen, rechten per zaaktype); bestaat die niet, dan schermafbeelding (C).",
       "asvs": "V4.1, V4.2",
-      "motivering": "De matrix bewijst de opzet; de log laat zien of de afscherming standhoudt.",
-      "status": "bevestigd"
+      "motivering": "De matrix bewijst de opzet; de log laat zien of de afscherming standhoudt. CIP U.09.1 verwijst rechtstreeks naar BIO2 8.03.02: het autorisatiemechanisme is een producteigenschap, de inrichting is de export.",
+      "status": "bevestigd",
+      "cip": "U.09"
     },
     {
       "id": "8.04.01",
@@ -1218,13 +1244,15 @@
       "thema": "Logische toegangsbeveiliging",
       "soort": [
         "A",
-        "B"
+        "B",
+        "C"
       ],
       "bron": "eigen",
-      "bewijs": "Twee regels. 1: leveranciersaccounts met einddatum, rechten en registratie van toekenning (A), gebruik in de log (B). 2: inloginstellingen: sessieduur en inactiviteitsvergrendeling, lockout na mislukte pogingen, neutrale foutmeldingen (A).",
+      "bewijs": "Twee regels. 1: leveranciersaccounts met einddatum, rechten en registratie van toekenning (A), gebruik in de log (B). 2: inloginstellingen: sessieduur en inactiviteitsvergrendeling, lockout na mislukte pogingen, neutrale foutmeldingen (A). Bescherming tegen brute force en password spraying en veilig sessietokenbeheer zijn leverancierseigenschappen (CIP U.05, U.08.3): verklaring of pentestrapport (C).",
       "asvs": "V2, V3",
-      "motivering": "De BIO2-tekst gaat over leverancierstoegang; de ISO-maatregel over beveiligde authenticatie in het algemeen. Beide zijn instelling plus log.",
-      "status": "bevestigd"
+      "motivering": "De BIO2-tekst gaat over leverancierstoegang; de ISO-maatregel over beveiligde authenticatie in het algemeen. Beide zijn instelling plus log. CIP U.05 (sessiebeheer) en U.08 (authenticatie) noemen time-out, tokenbeheer en robuustheid tegen raden; de time-out is een instelling, de rest is productgedrag dat de leverancier aantoont.",
+      "status": "bevestigd",
+      "cip": "U.05"
     },
     {
       "id": "8.06.01",
@@ -1248,10 +1276,11 @@
         "C"
       ],
       "bron": "eigen",
-      "bewijs": "Instelling dat uploads en downloads door de malwarescan gaan; bij een SaaS-dienst de verklaring van de leverancier.",
+      "bewijs": "Instelling dat uploads en downloads door de malwarescan gaan; bij een SaaS-dienst de verklaring van de leverancier. Ook: quotum en maximale bestandsgrootte voor uploads als instelling (CIP U.13.1 en .3).",
       "asvs": "V12.4",
-      "motivering": "Een zaaksysteem ontvangt bestanden van buiten; of die gescand worden is een instelling of een dienstbelofte.",
-      "status": "bevestigd"
+      "motivering": "Een zaaksysteem ontvangt bestanden van buiten; of die gescand worden is een instelling of een dienstbelofte. CIP U.13 (gegevensimport, ASVS V12): detectie van ingesloten aanvallen, quota en bestandsgrootte.",
+      "status": "bevestigd",
+      "cip": "U.13"
     },
     {
       "id": "8.07.02",
@@ -1290,7 +1319,8 @@
       "bewijs": "Verklaring of rapport van de leverancier dat ontvangen bestanden gescand worden voor opslag.",
       "asvs": "",
       "motivering": "Bij een gehoste applicatie ligt de scan bij de leverancier.",
-      "status": "bevestigd"
+      "status": "bevestigd",
+      "cip": "U.13"
     },
     {
       "id": "8.08.01",
@@ -1301,10 +1331,11 @@
         "C"
       ],
       "bron": "eigen",
-      "bewijs": "Versienummer uit de export; laatste release en releasedatum door de gebruiker ingevoerd met bron-URL; de regel rekent de achterstand in versies en dagen uit (A). Releasenotes en patch-SLA als document (C).",
+      "bewijs": "Versienummer uit de export; laatste release en releasedatum door de gebruiker ingevoerd met bron-URL; de regel rekent de achterstand in versies en dagen uit (A). Releasenotes en patch-SLA als document (C). Uiterste ondersteuningsdatum van de gebruikte versie uit de registratie van de leverancier (CIP U.01.2); versiehistorie uit de applicatie als die bestaat (CIP C.03.5).",
       "asvs": "V14.2",
-      "motivering": "Of de applicatie bij is, is deterministisch zodra de laatste release bekend is; die voert de gebruiker in, met bron.",
-      "status": "bevestigd"
+      "motivering": "Of de applicatie bij is, is deterministisch zodra de laatste release bekend is; die voert de gebruiker in, met bron. CIP U.01 en C.03 leggen de registratie van ondersteunde versies en van patchactiviteiten bij de leverancier; de vergelijking met de eigen versie is het deel dat de applicatie zelf bewijst.",
+      "status": "bevestigd",
+      "cip": "U.01"
     },
     {
       "id": "8.08.02",
@@ -1317,7 +1348,8 @@
       "bewijs": "Patchbeleid en risicoafweging van de leverancier; eigen risicoafweging bij uitstel (D).",
       "asvs": "",
       "motivering": "De afweging zelf is proces; het beleid van de leverancier is een document.",
-      "status": "bevestigd"
+      "status": "bevestigd",
+      "cip": "C.03"
     },
     {
       "id": "8.08.03",
@@ -1330,7 +1362,8 @@
       "bewijs": "Als 8.08.02: welke mitigerende maatregelen de leverancier neemt als een patch niet binnen een week kan.",
       "asvs": "",
       "motivering": "Zie 8.08.02.",
-      "status": "bevestigd"
+      "status": "bevestigd",
+      "cip": "C.03"
     },
     {
       "id": "8.08.04",
@@ -1343,7 +1376,8 @@
       "bewijs": "Recent pentest- of kwetsbaarheidsrapport over de applicatie, met scope en datum.",
       "asvs": "",
       "motivering": "Een rapport is document-bewijs; het instrument registreert datum en scope, niet de inhoud.",
-      "status": "bevestigd"
+      "status": "bevestigd",
+      "cip": "C.03"
     },
     {
       "id": "8.08.05",
@@ -1356,7 +1390,8 @@
       "bewijs": "Pentestrapport per release of major update van een internetfacing applicatie.",
       "asvs": "",
       "motivering": "Zie 8.08.04.",
-      "status": "bevestigd"
+      "status": "bevestigd",
+      "cip": "C.03"
     },
     {
       "id": "8.08.06",
@@ -1369,7 +1404,8 @@
       "bewijs": "Gepubliceerde CVD-procedure van de leverancier; de eigen CVD-procedure is D.",
       "asvs": "",
       "motivering": "Bij een gekocht pakket komt een kwetsbaarheidsmelding bij de leverancier binnen.",
-      "status": "bevestigd"
+      "status": "bevestigd",
+      "cip": "C.03"
     },
     {
       "id": "8.09.01",
@@ -1396,7 +1432,8 @@
       "bewijs": "Vernietigings- en retentie-instellingen; in de log: uitgevoerde vernietigingsacties met resultaat.",
       "asvs": "",
       "motivering": "Wissen van informatie is in een zaaksysteem een geconfigureerde en gelogde handeling.",
-      "status": "bevestigd"
+      "status": "bevestigd",
+      "cip": "U.06"
     },
     {
       "id": "8.11.01",
@@ -1435,7 +1472,8 @@
       "bewijs": "",
       "asvs": "",
       "motivering": "Technologische maatregel die bij een gekochte applicatie in de infrastructuur, de werkplek of het proces ligt (Back-up & Recovery), niet in de applicatieconfiguratie.",
-      "status": "bevestigd"
+      "status": "bevestigd",
+      "cip": "U.03"
     },
     {
       "id": "8.13.02",
@@ -1448,7 +1486,8 @@
       "bewijs": "",
       "asvs": "",
       "motivering": "Technologische maatregel die bij een gekochte applicatie in de infrastructuur, de werkplek of het proces ligt (Back-up & Recovery), niet in de applicatieconfiguratie.",
-      "status": "bevestigd"
+      "status": "bevestigd",
+      "cip": "U.03"
     },
     {
       "id": "8.13.03",
@@ -1461,7 +1500,8 @@
       "bewijs": "Beschrijving van de back-uplocatie en scheiding van de productielocatie; bij eigen hosting de back-upconfiguratie (A).",
       "asvs": "",
       "motivering": "Back-up van een gehoste applicatie is een dienstbelofte van de leverancier.",
-      "status": "bevestigd"
+      "status": "bevestigd",
+      "cip": "U.03"
     },
     {
       "id": "8.13.04",
@@ -1474,7 +1514,8 @@
       "bewijs": "Verslag van de laatste hersteltest, met datum en uitkomst.",
       "asvs": "",
       "motivering": "De test is proces; het verslag is document-bewijs met peildatum.",
-      "status": "bevestigd"
+      "status": "bevestigd",
+      "cip": "U.03"
     },
     {
       "id": "8.14.01",
@@ -1487,7 +1528,8 @@
       "bewijs": "Architectuur- of SLA-beschrijving van redundantie bij de leverancier.",
       "asvs": "",
       "motivering": "Redundantie zit in de hostinglaag, niet in de applicatieconfiguratie.",
-      "status": "bevestigd"
+      "status": "bevestigd",
+      "cip": "U.03"
     },
     {
       "id": "8.15.01",
@@ -1500,7 +1542,8 @@
       "bewijs": "Audit-export uit de applicatie zelf (bij JOIN: de tab-gescheiden export van de audittabel) waarin elke regel actie, object, resultaat, oorsprong, identiteit en tijdstip bevat.",
       "asvs": "V7.1",
       "motivering": "De hardste B: de velden staan in de BIO2-tekst en zijn deterministisch te toetsen op een sample.",
-      "status": "bevestigd"
+      "status": "bevestigd",
+      "cip": "U.11"
     },
     {
       "id": "8.15.02",
@@ -1513,7 +1556,8 @@
       "bewijs": "Hetzelfde logsample als 8.15.01, zonder wachtwoorden, tokens, sessiesleutels of burgerservicenummers; dezelfde scan als de anonimizer.",
       "asvs": "V7.1",
       "motivering": "Wat er niet in mag staan is deterministisch te vinden.",
-      "status": "bevestigd"
+      "status": "bevestigd",
+      "cip": "U.11"
     },
     {
       "id": "8.15.03",
@@ -1526,7 +1570,8 @@
       "bewijs": "Instelling welke logtypen aan staan (bijvoorbeeld audittypen per module); het organisatiebrede overzicht is D.",
       "asvs": "V7.1",
       "motivering": "Per applicatie is het overzicht een instelling.",
-      "status": "bevestigd"
+      "status": "bevestigd",
+      "cip": "U.11"
     },
     {
       "id": "8.15.04",
@@ -1538,8 +1583,9 @@
       "bron": "eigen",
       "bewijs": "Retentie-instelling per logtype; de risicoafweging erachter is D.",
       "asvs": "V7.1",
-      "motivering": "De termijn staat in de configuratie; of hij risicogericht is, beslist een mens.",
-      "status": "bevestigd"
+      "motivering": "De termijn staat in de configuratie; of hij risicogericht is, beslist een mens. CIP U.11.4 zegt letterlijk dat de bewaartermijn tot uitdrukking komt in de configuratie-instellingen van het softwarepakket.",
+      "status": "bevestigd",
+      "cip": "U.11"
     },
     {
       "id": "8.15.05",
@@ -1552,7 +1598,8 @@
       "bewijs": "Instelling dat de log naar een aparte of onveranderbare opslag gaat en wie de audittabel mag wijzigen; de melding als incident is D.",
       "asvs": "V7.3",
       "motivering": "Bescherming van de log is een instelling; de opvolging niet.",
-      "status": "bevestigd"
+      "status": "bevestigd",
+      "cip": "U.11"
     },
     {
       "id": "8.15.06",
@@ -1603,8 +1650,9 @@
       "bron": "eigen",
       "bewijs": "Schermafbeelding of exportregel die laat zien dat de applicatielog naar de SIEM gaat; de monitoring zelf is landschap (security-posture-tool).",
       "asvs": "",
-      "motivering": "Applicatiecheck ziet alleen of de aansluiting er is.",
-      "status": "bevestigd"
+      "motivering": "Applicatiecheck ziet alleen of de aansluiting er is. CIP U.11.2: te registreren acties worden centraal opgeslagen; de aansluiting op die centrale plek is wat de applicatie laat zien.",
+      "status": "bevestigd",
+      "cip": "U.11"
     },
     {
       "id": "8.16.04",
@@ -1643,8 +1691,9 @@
       "bron": "eigen",
       "bewijs": "Wie toegang heeft tot de beheeromgeving (rollen); in de log: gebruik van beheerfuncties. Bron: export uit de beheeromgeving (gebruikers, gebruikersrollen, rechten per zaaktype); bestaat die niet, dan schermafbeelding (C).",
       "asvs": "V4.3",
-      "motivering": "Systeemhulpmiddelen van een applicatie zijn de beheerconsole en de importfuncties.",
-      "status": "bevestigd"
+      "motivering": "Systeemhulpmiddelen van een applicatie zijn de beheerconsole en de importfuncties. CIP U.09.2: beheerdersfuncties worden extra beschermd.",
+      "status": "bevestigd",
+      "cip": "U.09"
     },
     {
       "id": "8.18.02",
@@ -1747,10 +1796,11 @@
         "C"
       ],
       "bron": "eigen",
-      "bewijs": "Transportversleuteling uit de configuratie: alleen HTTPS, TLS-versies, HSTS (A); extern scanrapport (bijvoorbeeld internet.nl) als document met datum (C).",
+      "bewijs": "Transportversleuteling uit de configuratie: alleen HTTPS, TLS-versies, HSTS (A); extern scanrapport (bijvoorbeeld internet.nl) als document met datum (C). Ook: certificaatverificatie en geen terugval naar onversleutelde communicatie als instelling (CIP U.07.4 en .5).",
       "asvs": "V9.1",
-      "motivering": "De offline pagina doet zelf geen netwerkverkeer; de meting van buiten komt binnen als document.",
-      "status": "bevestigd"
+      "motivering": "De offline pagina doet zelf geen netwerkverkeer; de meting van buiten komt binnen als document. CIP U.07 bevestigt: afgedwongen versleuteling en geen terugval zijn configureerbaar en dus aantoonbaar.",
+      "status": "bevestigd",
+      "cip": "U.07"
     },
     {
       "id": "8.22.01",
@@ -1787,10 +1837,11 @@
         "C"
       ],
       "bron": "eigen",
-      "bewijs": "Encryptie-instellingen voor opslag en transport, algoritmen (A); sleutelbeheer en scanrapport als document (C); het cryptografiebeleid is D.",
+      "bewijs": "Encryptie-instellingen voor opslag en transport, algoritmen (A); sleutelbeheer en scanrapport als document (C); het cryptografiebeleid is D. Wachtwoordopslag met hashing en salt is een leveranciersverklaring (CIP U.06.3); bij SSO niet van toepassing.",
       "asvs": "V6",
-      "motivering": "Het beleid is organisatie; wat de applicatie toepast is configuratie of een leveranciersverklaring.",
-      "status": "bevestigd"
+      "motivering": "Het beleid is organisatie; wat de applicatie toepast is configuratie of een leveranciersverklaring. CIP B.05 (beleid, D) en U.06/U.07 (opslag en transport, uitvoering) bevestigen de splitsing: beleid buiten, toepassing in de applicatie.",
+      "status": "bevestigd",
+      "cip": "B.05"
     },
     {
       "id": "8.25.01",
@@ -1815,8 +1866,9 @@
       "bron": "nvt",
       "bewijs": "",
       "asvs": "",
-      "motivering": "Technologische maatregel die bij een gekochte applicatie in de infrastructuur, de werkplek of het proces ligt (Secure Software Development), niet in de applicatieconfiguratie. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt.",
-      "status": "bevestigd"
+      "motivering": "Technologische maatregel die bij een gekochte applicatie in de infrastructuur, de werkplek of het proces ligt (Secure Software Development), niet in de applicatieconfiguratie. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt. CIP B.01: beveiligingseisen (authenticatie, toegang, encryptie, logging, foutafhandeling) worden bij verwerving gesteld; dat is het programma van eisen van de klant, geen applicatiebewijs.",
+      "status": "bevestigd",
+      "cip": "B.01"
     },
     {
       "id": "8.27.01",
@@ -1828,8 +1880,9 @@
       "bron": "leverancier",
       "bewijs": "Architectuurbeschrijving of verklaring over security by design en by default.",
       "asvs": "",
-      "motivering": "Zie 8.25.01.",
-      "status": "bevestigd"
+      "motivering": "Zie 8.25.01. CIP B.06.2: security by default, fail secure, defence in depth en default deny als toetsprincipes bij verwerving; een leveranciersverklaring per principe.",
+      "status": "bevestigd",
+      "cip": "B.06"
     },
     {
       "id": "8.28.01",
@@ -1841,8 +1894,9 @@
       "bron": "leverancier",
       "bewijs": "Verklaring over veilig coderen (richtlijnen, code review, statische analyse).",
       "asvs": "",
-      "motivering": "Zie 8.25.01.",
-      "status": "bevestigd"
+      "motivering": "Zie 8.25.01. CIP U.04 (invoer- en uitvoervalidatie, SSD-19/20, ASVS V12) legt dit bij de leverancier; een pentestrapport of SSD-verklaring is het bewijs.",
+      "status": "bevestigd",
+      "cip": "U.04"
     },
     {
       "id": "8.29.01",
@@ -1855,7 +1909,8 @@
       "bewijs": "Testverslag van de laatste acceptatietest, met datum en resultaten.",
       "asvs": "",
       "motivering": "Het verslag is document-bewijs; de methodiek is proces.",
-      "status": "bevestigd"
+      "status": "bevestigd",
+      "cip": "U.02"
     },
     {
       "id": "8.30.01",
@@ -1894,20 +1949,23 @@
       "bewijs": "Testverslag bij significante wijzigingen; zie 8.29.01.",
       "asvs": "",
       "motivering": "Zie 8.31.01.",
-      "status": "bevestigd"
+      "status": "bevestigd",
+      "cip": "C.02"
     },
     {
       "id": "8.32.01",
       "titel": "Wijzigingsbeheer",
       "thema": "Wijzigingsbeheer",
       "soort": [
-        "A"
+        "A",
+        "C"
       ],
       "bron": "eigen",
-      "bewijs": "Verschil tussen de huidige export en de export van de vorige peildatum: welke instellingen, rollen en koppelingen zijn veranderd. Of die wijzigingen via wijzigingsbeheer gingen is D.",
+      "bewijs": "Verschil tussen de huidige export en de export van de vorige peildatum: welke instellingen, rollen en koppelingen zijn veranderd. Of die wijzigingen via wijzigingsbeheer gingen is D. Daarnaast van de leverancier: hoe wijzigingen vooraf geanalyseerd, getest en gecommuniceerd worden (CIP C.02.3 en .4).",
       "asvs": "V14.1",
-      "motivering": "De configuratie-diff bewijst dát er is gewijzigd; het proces eromheen niet.",
-      "status": "bevestigd"
+      "motivering": "De configuratie-diff bewijst dát er is gewijzigd; het proces eromheen niet. CIP C.02 leest 8.32 als controle op het wijzigingsproces van de leverancier; de export-diff is wat de klant zelf ziet, de procesbeschrijving komt van de leverancier.",
+      "status": "bevestigd",
+      "cip": "C.02"
     },
     {
       "id": "8.32.02",
@@ -1920,7 +1978,8 @@
       "bewijs": "",
       "asvs": "",
       "motivering": "Technologische maatregel die bij een gekochte applicatie in de infrastructuur, de werkplek of het proces ligt (Wijzigingsbeheer), niet in de applicatieconfiguratie.",
-      "status": "bevestigd"
+      "status": "bevestigd",
+      "cip": "C.02"
     },
     {
       "id": "8.33.01",
@@ -1961,5 +2020,13 @@
       "motivering": "Organisatorische maatregel (Overig); het bewijs ligt bij beleid, proces of contract, niet in de applicatie.",
       "status": "bevestigd"
     }
-  ]
+  ],
+  "bron_cip": {
+    "titel": "BIO Thema-uitwerking Softwarepakketten",
+    "versie": "2.0 definitief, mei 2026 (BIO2 1.3 verwerkt)",
+    "uitgever": "Centrum Informatiebeveiliging en Privacybescherming (CIP)",
+    "url": "https://www.cip-overheid.nl/producten-en-diensten/Softwarepakketten",
+    "licentie": "CC BY-NC-SA 4.0; hier alleen objectnummers en parafrase, geen overgenomen tekst",
+    "gebruik": "Laag 2 van de indeling: het veld cip verwijst naar het object (B = beleid, U = uitvoering, C = control) dat de maatregel raakt."
+  }
 }
