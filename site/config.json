@@ -1,0 +1,10 @@
+{
+  "repoUrl": "https://github.com/security-commons-nl/applicatiecheck",
+  "title": "Applicatiecheck · Security Commons NL",
+  "description": "Toont uit de applicatie zelf aan wat de BIO2 van een kritische applicatie vraagt: configuratie-export en logsample deterministisch getoetst, AI alleen voor extractie, mens beslist.",
+  "siteTitle": "Applicatiecheck",
+  "tabs": [
+    { "file": "README.md", "id": "ontwerp", "label": "Ontwerp" }
+  ],
+  "queryFiles": []
+}
