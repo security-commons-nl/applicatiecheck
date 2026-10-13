@@ -33,6 +33,14 @@ def cel(tekst: str) -> str:
     return tekst.replace("|", "\\|").replace("\n", " ").strip()
 
 
+def bio2_telling() -> str:
+    """De soort staat in de kopie uit normen: overheid of alleen-iso."""
+    bio2 = json.loads((REPO / "bronnen" / "bio2.json").read_text(encoding="utf-8"))
+    soorten = [m.get("soort") for m in bio2["maatregelen"]]
+    return (f"{soorten.count('overheid')} overheidsmaatregelen en {soorten.count('alleen-iso')} "
+            "ISO-beheersmaatregelen zonder overheidsmaatregel")
+
+
 def bouw(data: dict) -> str:
     rijen = data["maatregelen"]
     telling = {s: sum(1 for r in rijen if r["soort"][0] == s) for s in VOLGORDE}
@@ -40,10 +48,12 @@ def bouw(data: dict) -> str:
     regels = [
         "# Indeling: welk bewijs per maatregel",
         "",
-        f"Van de {len(rijen)} overheidsmaatregelen in BIO2 kan een gekochte applicatie er {met_ab} geheel of "
-        f"gedeeltelijk zelf aantonen uit configuratie (A) of log (B). Voor {telling['C']} ligt het bewijs in een "
+        f"Van de {len(rijen)} nummers in deel 2 van BIO2 ({bio2_telling()}) kan een gekochte applicatie er "
+        f"{met_ab} geheel of gedeeltelijk zelf aantonen uit configuratie (A) of log (B). Voor {telling['C']} ligt het bewijs in een "
         f"document of schermafbeelding (C), en {telling['D']} liggen buiten de applicatie (D). "
-        f"Peildatum {data['peildatum']}; status van elke rij: *{rijen[0]['status']}*.",
+        f"Peildatum {data['peildatum']}; "
+        + "; ".join(f"{sum(1 for r in rijen if r['status'] == st)} rijen *{st}*"
+                    for st in ("bevestigd", "voorlopig") if any(r["status"] == st for r in rijen)) + ".",
         "",
         "> " + data["toelichting"],
         "",
