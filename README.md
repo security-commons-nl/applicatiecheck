@@ -60,7 +60,7 @@ Het landschap is al bezet, en dit instrument past ertussen zonder iets te dubbel
 
 ## Vier soorten bewijs
 
-Van de 148 maatregelen in de BIO2 is een minderheid uit een applicatie af te leiden. Het instrument legt
+Van de 157 nummers in deel 2 van de BIO2 (versie 1.3: 117 overheidsmaatregelen) is een minderheid uit een applicatie af te leiden. Het instrument legt
 per maatregel vast welke soort bewijs geldt, en die indeling is het eerste product, ook zonder tool: zie
 [indeling.md](indeling.md), gegenereerd uit `bewijs.json`.
 
@@ -128,7 +128,7 @@ leest, wordt vastgelegd in het bouwplan in de
 
 Drie vragen waar we het antwoord nog niet op hebben:
 
-- Welke van de 148 maatregelen horen bij A, B, C of D? Een eerste, voorlopige indeling staat in
+- Welke van de 157 nummers horen bij A, B, C of D? Een eerste, voorlopige indeling staat in
   [indeling.md](indeling.md) (bron: `bewijs.json`); wie er een zaaksysteem naast legt, ziet vast dingen die
   wij missen.
 - Hoe ziet een configuratie-export van jouw zaaksysteem eruit, en mag een geanonimiseerde versie als

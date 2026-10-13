@@ -1,21 +1,21 @@
 # Indeling: welk bewijs per maatregel
 
-Van de 148 overheidsmaatregelen in BIO2 kan een gekochte applicatie er 33 geheel of gedeeltelijk zelf aantonen uit configuratie (A) of log (B). Voor 21 ligt het bewijs in een document of schermafbeelding (C), en 94 liggen buiten de applicatie (D). Peildatum 2026-09-02; status van elke rij: *bevestigd*.
+Van de 157 nummers in deel 2 van BIO2 (117 overheidsmaatregelen en 40 ISO-beheersmaatregelen zonder overheidsmaatregel) kan een gekochte applicatie er 34 geheel of gedeeltelijk zelf aantonen uit configuratie (A) of log (B). Voor 20 ligt het bewijs in een document of schermafbeelding (C), en 103 liggen buiten de applicatie (D). Peildatum 2026-09-02; 146 rijen *bevestigd*; 11 rijen *voorlopig*.
 
 > Per overheidsmaatregel van BIO 2.0 (nummer en titel; de tekst staat bij het CIP, zie bron_bio2): uit welk soort bewijs een applicatie hem kan aantonen (A, B, C) of dat het bewijs buiten de applicatie ligt (D). Kader: CIP BIO Thema-uitwerking Softwarepakketten (gekochte applicatie); ASVS-verwijzingen via OpenCRE als aanwijzing wat het bewijs moet bevatten. Uitgangspunt is een applicatie als SaaS bij de leverancier met SSO via de centrale identity provider; eigen hosting of lokale authenticatie staat waar het uitmaakt in de motivering. Status bevestigd: per familie langsgelopen op 02-09-2026 en dezelfde dag naast de CIP Thema-uitwerking Softwarepakketten v2.0 gelegd (veld cip).
 
-Bron van de maatregelen: `bronnen/bio2.json`, BIO2 v1.3 definitief - 9 januari 2026 (kopie uit [normen](https://github.com/security-commons-nl/normen), vingerafdruk `1c0b27a8841e`). Hier staan nummer, titel, thema en de indeling; de tekst van een overheidsmaatregel staat bij het CIP (CC BY-NC-SA), niet in de commons.
+Bron van de maatregelen: `bronnen/bio2.json`, BIO2 v1.3 definitief - 9 januari 2026 (kopie uit [normen](https://github.com/security-commons-nl/normen), vingerafdruk `0c6598e63db2`). Hier staan nummer, titel, thema en de indeling; de tekst van een overheidsmaatregel staat bij het CIP (CC BY-NC-SA), niet in de commons.
 
 Kolom CIP: het object uit de BIO Thema-uitwerking Softwarepakketten (2.0 definitief, mei 2026 (BIO2 1.3 verwerkt)) dat de maatregel raakt; B = beleid, U = uitvoering, C = control. Alleen objectnummers, geen overgenomen tekst (CC BY-NC-SA).
 
 | Soort | Betekenis | Aantal (eerste soort) |
 |---|---|---|
-| **A** | Configuratie-export: wat is ingesteld. Regel per veld, parser per applicatie. | 29 |
+| **A** | Configuratie-export: wat is ingesteld. Regel per veld, parser per applicatie. | 30 |
 | **B** | Logsample: wat er gebeurt. Structuurtoets op de laatste 24 uur of 1000 regels; geen gedragsmeting. | 4 |
-| **C** | Document of schermafbeelding: wat A en B niet raken. AI-extractie, altijd met menselijke bevestiging. | 21 |
-| **D** | Niet uit de applicatie: proces en organisatie. Het instrument zegt dit hardop. | 94 |
+| **C** | Document of schermafbeelding: wat A en B niet raken. AI-extractie, altijd met menselijke bevestiging. | 20 |
+| **D** | Niet uit de applicatie: proces en organisatie. Het instrument zegt dit hardop. | 103 |
 
-## A. Configuratie-export (29)
+## A. Configuratie-export (30)
 
 | Nr | Titel | Soort | Bron | Wat het bewijs moet bevatten | ASVS | CIP | Motivering |
 |---|---|---|---|---|---|---|---|
@@ -47,6 +47,7 @@ Kolom CIP: het object uit de BIO Thema-uitwerking Softwarepakketten (2.0 definit
 | 8.18.01 | Gebruik van speciale systeemhulpmiddelen | A + B | eigen | Wie toegang heeft tot de beheeromgeving (rollen); in de log: gebruik van beheerfuncties. Bron: export uit de beheeromgeving (gebruikers, gebruikersrollen, rechten per zaaktype); bestaat die niet, dan schermafbeelding (C). | V4.3 | U.09 | Systeemhulpmiddelen van een applicatie zijn de beheerconsole en de importfuncties. CIP U.09.2: beheerdersfuncties worden extra beschermd. |
 | 8.21.04 | Beveiliging van netwerkdiensten | A + C | eigen | Transportversleuteling uit de configuratie: alleen HTTPS, TLS-versies, HSTS (A); extern scanrapport (bijvoorbeeld internet.nl) als document met datum (C). Ook: certificaatverificatie en geen terugval naar onversleutelde communicatie als instelling (CIP U.07.4 en .5). | V9.1 | U.07 | De offline pagina doet zelf geen netwerkverkeer; de meting van buiten komt binnen als document. CIP U.07 bevestigt: afgedwongen versleuteling en geen terugval zijn configureerbaar en dus aantoonbaar. |
 | 8.24.01 | Gebruik van cryptografie | A + C | eigen | Encryptie-instellingen voor opslag en transport, algoritmen (A); sleutelbeheer en scanrapport als document (C); het cryptografiebeleid is D. Wachtwoordopslag met hashing en salt is een leveranciersverklaring (CIP U.06.3); bij SSO niet van toepassing. | V6 | B.05 | Het beleid is organisatie; wat de applicatie toepast is configuratie of een leveranciersverklaring. CIP B.05 (beleid, D) en U.06/U.07 (opslag en transport, uitvoering) bevestigen de splitsing: beleid buiten, toepassing in de applicatie. |
+| 8.24.04 | Gebruik van cryptografie | A + C | eigen | Ingestelde algoritmen en sleutellengtes voor transport en opslag (A), of de verklaring van de leverancier welke hij gebruikt (C); te leggen naast het actuele advies van het NCSC. | V6.2 | B.05 | Welke cryptografie de applicatie gebruikt is configuratie of een leveranciersverklaring; of die sterk genoeg is, toets je aan het NCSC-advies. Nieuw nummer in versie 1.3, ingedeeld naar het voorbeeld van 8.24.01. |
 | 8.32.01 | Wijzigingsbeheer | A + C | eigen | Verschil tussen de huidige export en de export van de vorige peildatum: welke instellingen, rollen en koppelingen zijn veranderd. Of die wijzigingen via wijzigingsbeheer gingen is D. Daarnaast van de leverancier: hoe wijzigingen vooraf geanalyseerd, getest en gecommuniceerd worden (CIP C.02.3 en .4). | V14.1 | C.02 | De configuratie-diff bewijst dát er is gewijzigd; het proces eromheen niet. CIP C.02 leest 8.32 als controle op het wijzigingsproces van de leverancier; de export-diff is wat de klant zelf ziet, de procesbeschrijving komt van de leverancier. |
 
 ## B. Logsample (4)
@@ -58,7 +59,7 @@ Kolom CIP: het object uit de BIO Thema-uitwerking Softwarepakketten (2.0 definit
 | 8.17.01 | Kloksynchronisatie | B | eigen | Logsample met tijdstempels in een eenduidig formaat met tijdzone, in monotone volgorde, zonder onverklaarbare sprongen ten opzichte van de exporttijd. | V7.1 |  | Kloksynchronisatie is alleen uit gedrag aantoonbaar; de NTP-instelling is infrastructuur. |
 | 8.18.02 | Gebruik van speciale systeemhulpmiddelen | B + A | eigen | Beheeracties in de log; retentie-instelling van dat logtype op minimaal een half jaar. | V7.1 |  | BIO2 noemt de termijn; die is een instelling, het loggen zelf is gedrag. |
 
-## C. Document of schermafbeelding (21)
+## C. Document of schermafbeelding (20)
 
 | Nr | Titel | Soort | Bron | Wat het bewijs moet bevatten | ASVS | CIP | Motivering |
 |---|---|---|---|---|---|---|---|
@@ -69,7 +70,6 @@ Kolom CIP: het object uit de BIO Thema-uitwerking Softwarepakketten (2.0 definit
 | 8.08.03 | Beheer van technische kwetsbaarheden | C | leverancier | Als 8.08.02: welke mitigerende maatregelen de leverancier neemt als een patch niet binnen een week kan. |  | C.03 | Zie 8.08.02. |
 | 8.08.04 | Beheer van technische kwetsbaarheden | C | leverancier | Recent pentest- of kwetsbaarheidsrapport over de applicatie, met scope en datum. |  | C.03 | Een rapport is document-bewijs; het instrument registreert datum en scope, niet de inhoud. |
 | 8.08.05 | Beheer van technische kwetsbaarheden | C | leverancier | Pentestrapport per release of major update van een internetfacing applicatie. |  | C.03 | Zie 8.08.04. |
-| 8.08.06 | Beheer van technische kwetsbaarheden | C | leverancier | Gepubliceerde CVD-procedure van de leverancier; de eigen CVD-procedure is D. |  | C.03 | Bij een gekocht pakket komt een kwetsbaarheidsmelding bij de leverancier binnen. |
 | 8.11.01 | Maskeren van gegevens | C | eigen | Schermafbeelding van maskering of pseudonimisering waar de applicatie die toepast (bijvoorbeeld BSN in overzichten, testomgeving). | V8.3 |  | Niet elk pakket kent maskering; waar het bestaat is het een instelling, anders niet aantoonbaar. |
 | 8.13.03 | Back-up van informatie | C | leverancier | Beschrijving van de back-uplocatie en scheiding van de productielocatie; bij eigen hosting de back-upconfiguratie (A). |  | U.03 | Back-up van een gehoste applicatie is een dienstbelofte van de leverancier. |
 | 8.13.04 | Back-up van informatie | C | eigen | Verslag van de laatste hersteltest, met datum en uitkomst. |  | U.03 | De test is proces; het verslag is document-bewijs met peildatum. |
@@ -84,23 +84,23 @@ Kolom CIP: het object uit de BIO Thema-uitwerking Softwarepakketten (2.0 definit
 | 8.31.02 | Scheiding van ontwikkel-, test- en productieomgevingen | C | eigen | Testverslag bij significante wijzigingen; zie 8.29.01. |  | C.02 | Zie 8.31.01. |
 | 8.33.01 | Testgegevens | C | eigen | Schermafbeelding of instelling die laat zien dat testgegevens geanonimiseerd of synthetisch zijn. |  |  | Waar de applicatie anonimisering voor test ondersteunt is het een instelling; anders niet aantoonbaar. |
 
-## D. Niet uit de applicatie (94)
+## D. Niet uit de applicatie (103)
 
 | Nr | Titel | Thema | CIP | Waarom niet uit de applicatie |
 |---|---|---|---|---|
 | 5.01.01 | Informatiebeveiligingsbeleid | IV-beleid |  | Organisatorische maatregel (IV-beleid); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
-| 5.01.02 | Beleidsregels voor informatie beveiliging | IV-beleid |  | Organisatorische maatregel (IV-beleid); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
+| 5.01.02 | Informatiebeveiligingsbeleid | IV-beleid |  | Organisatorische maatregel (IV-beleid); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
 | 5.02.01 | Rollen en verantwoordelijkheden bij informatiebeveiliging | IV-beleid |  | Organisatorische maatregel (IV-beleid); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
 | 5.02.02 | Rollen en verantwoordelijkheden bij informatiebeveiliging | IV-beleid |  | Organisatorische maatregel (IV-beleid); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
 | 5.04.01 | Managementverantwoordelijkheden | Screening, bewustzijn & opleiding |  | Organisatorische maatregel (Screening, bewustzijn & opleiding); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
-| 5.04.02 | Managementverantwoordelijkheden | Screening, bewustzijn & opleiding |  | Organisatorische maatregel (Screening, bewustzijn & opleiding); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
-| 5.04.03 | Managementverantwoordelijkheden | Screening, bewustzijn & opleiding |  | Organisatorische maatregel (Screening, bewustzijn & opleiding); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
 | 5.05.01 | Contact met overheidsinstanties | IV-beleid |  | Organisatorische maatregel (IV-beleid); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
 | 5.06.01 | Contact met speciale belangengroepen | IV-beleid |  | Organisatorische maatregel (IV-beleid); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt. |
 | 5.07.01 | Informatie en analyses over dreigingen | IV-beleid |  | Organisatorische maatregel (IV-beleid); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt. |
 | 5.08.01 | Informatiebeveiliging in projectmanagement | Informatiebeveiliging binnen projecten | U.02 | Organisatorische maatregel (Informatiebeveiliging binnen projecten); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
 | 5.09.01 | Inventarisatie van informatie en andere gerelateerde bedrijfsmiddelen | Bedrijfsmiddelenbeheer |  | Organisatorische maatregel (Bedrijfsmiddelenbeheer); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
 | 5.10.01 | Aanvaardbaar gebruik van informatie en andere gerelateerde bedrijfsmiddelen | Bedrijfsmiddelenbeheer |  | Organisatorische maatregel (Bedrijfsmiddelenbeheer); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt. |
+| 5.10.02 | Aanvaardbaar gebruik van informatie en andere gerelateerde bedrijfsmiddelen | Bedrijfsmiddelenbeheer |  | Organisatorische maatregel (Screening, bewustzijn & opleiding); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. In versie 1.2 was dit 5.04.02. |
+| 5.10.03 | Aanvaardbaar gebruik van informatie en andere gerelateerde bedrijfsmiddelen | Bedrijfsmiddelenbeheer |  | Organisatorische maatregel (Screening, bewustzijn & opleiding); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. In versie 1.2 was dit 5.04.03. |
 | 5.11.01 | Retourneren van bedrijfsmiddelen | Bedrijfsmiddelenbeheer |  | Organisatorische maatregel (Bedrijfsmiddelenbeheer); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt. |
 | 5.14.02 | Overdragen van informatie | Informatie classificatie |  | Organisatorische maatregel (Informatie classificatie); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
 | 5.14.03 | Overdragen van informatie | Informatie classificatie |  | Organisatorische maatregel (Informatie classificatie); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
@@ -109,9 +109,13 @@ Kolom CIP: het object uit de BIO Thema-uitwerking Softwarepakketten (2.0 definit
 | 5.19.01 | Informatiebeveiliging in leveranciersrelaties | Leveranciersbeheer - Inkoop | B.02 | Organisatorische maatregel (Leveranciersbeheer - Inkoop); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
 | 5.20.01 | Adresseren van informatiebeveiliging in leveranciersovereenkomsten | Leveranciersbeheer - Inkoop | B.02 | Organisatorische maatregel (Leveranciersbeheer - Inkoop); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
 | 5.20.02 | Adresseren van informatiebeveiliging in leveranciersovereenkomsten | Leveranciersbeheer - Inkoop | B.02 | Organisatorische maatregel (Leveranciersbeheer - Inkoop); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
+| 5.20.04 | Adresseren van informatiebeveiliging in leveranciersovereenkomsten | Leveranciersbeheer - Inkoop |  | Organisatorische maatregel (Leveranciersbeheer - Inkoop); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. De eigen toets op de rapportage van de leverancier is een proces van de organisatie. Nieuw nummer in versie 1.3. |
+| 5.20.05 | Adresseren van informatiebeveiliging in leveranciersovereenkomsten | Leveranciersbeheer - Inkoop |  | Organisatorische maatregel (Leveranciersbeheer - Inkoop); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. Transparantie over kwetsbaarheden is een contractafspraak; de meldingen zelf lopen via 8.08. Nieuw nummer in versie 1.3. |
+| 5.20.06 | Adresseren van informatiebeveiliging in leveranciersovereenkomsten | Leveranciersbeheer - Inkoop |  | Organisatorische maatregel (Leveranciersbeheer - Inkoop); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. De risicoafweging vóór het contract is inkoop, niet de applicatie. Nieuw nummer in versie 1.3. |
 | 5.21.02 | Beheren van informatiebeveiliging in de ICT-toeleveringsketen | Leveranciersbeheer - Inkoop | B.02 | Organisatorische maatregel (Leveranciersbeheer - Inkoop); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
 | 5.21.03 | Beheren van informatiebeveiliging in de ICT-toeleveringsketen | Leveranciersbeheer - contractbeheer | B.02 | Organisatorische maatregel (Leveranciersbeheer - contractbeheer); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
 | 5.21.04 | Beheren van informatiebeveiliging in de ICT-toeleveringsketen | Leveranciersbeheer - contractbeheer | B.02 | Organisatorische maatregel (Leveranciersbeheer - contractbeheer); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
+| 5.21.05 | Beheren van informatiebeveiliging in de ICT-toeleveringsketen | Leveranciersbeheer - contractbeheer |  | Organisatorische maatregel (Security Incident Management); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. In versie 1.2 was dit 5.24.06. |
 | 5.22.01 | Monitoren, beoordelen en het beheren van wijzigingen van leveranciersdiensten | Leveranciersbeheer - contractbeheer | C.01 | Organisatorische maatregel (Leveranciersbeheer - contractbeheer); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
 | 5.22.02 | Monitoren, beoordelen en het beheren van wijzigingen van leveranciersdiensten | Leveranciersbeheer - contractbeheer | C.01 | Organisatorische maatregel (Leveranciersbeheer - contractbeheer); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
 | 5.23.01 | Informatiebeveiliging voor het gebruik van clouddiensten | Leveranciersbeheer - contractbeheer |  | Organisatorische maatregel (Leveranciersbeheer - contractbeheer); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
@@ -120,12 +124,12 @@ Kolom CIP: het object uit de BIO Thema-uitwerking Softwarepakketten (2.0 definit
 | 5.24.03 | Plannen en voorbereiden van het beheer van informatie-beveiligingsincidenten | Security Incident Management |  | Organisatorische maatregel (Security Incident Management); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
 | 5.24.04 | Plannen en voorbereiden van het beheer van informatie-beveiligingsincidenten | Security Incident Management |  | Organisatorische maatregel (Security Incident Management); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
 | 5.24.05 | Plannen en voorbereiden van het beheer van informatie-beveiligingsincidenten | Security Incident Management |  | Organisatorische maatregel (Security Incident Management); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
-| 5.24.06 | Plannen en voorbereiden van het beheer van informatie-beveiligingsincidenten | Security Incident Management |  | Organisatorische maatregel (Security Incident Management); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
 | 5.24.07 | Plannen en voorbereiden van het beheer van informatie-beveiligingsincidenten | Security Incident Management |  | Organisatorische maatregel (Security Incident Management); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
-| 5.25.01 | Beoordelen van en besluiten over informatiebeveiligingsgebeurtenissen | Security Incident Management |  | Organisatorische maatregel (Security Incident Management); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
-| 5.26.01 | Reageren op informatiebeveiligings-incidenten | Security Incident Management |  | Organisatorische maatregel (Security Incident Management); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt. |
+| 5.24.08 | Plannen en voorbereiden van het beheer van informatie-beveiligingsincidenten | Security Incident Management |  | Organisatorische maatregel (Security Incident Management); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
+| 5.25.02 | Beoordelen van en besluiten over informatiebeveiligingsgebeurtenissen | Security Incident Management |  | Organisatorische maatregel (Security Incident Management); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt. In versie 1.2 was dit 5.26.01. |
+| 5.26.02 | Reageren op informatiebeveiligings-incidenten | Security Incident Management |  | Organisatorische maatregel (Security Incident Management); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. In versie 1.2 was dit 5.25.01. |
 | 5.27.01 | Leren van informatiebeveiligingsincidenten | Security Incident Management |  | Organisatorische maatregel (Security Incident Management); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
-| 5.27.02 | Verzamelen van bewijsmateriaal | Security Incident Management |  | Organisatorische maatregel (Security Incident Management); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
+| 5.27.02 | Leren van informatiebeveiligingsincidenten | Security Incident Management |  | Organisatorische maatregel (Security Incident Management); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
 | 5.29.01 | Informatiebeveiliging tijdens een verstoring | Business Continuity & Disaster Recovery | U.03 | Organisatorische maatregel (Business Continuity & Disaster Recovery); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt. |
 | 5.30.01 | ICT-gereedheid voor bedrijfscontinuïteit | Business Continuity & Disaster Recovery | U.03 | Organisatorische maatregel (Business Continuity & Disaster Recovery); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
 | 5.30.02 | ICT-gereedheid voor bedrijfscontinuïteit | Business Continuity & Disaster Recovery | U.03 | Organisatorische maatregel (Business Continuity & Disaster Recovery); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
@@ -134,18 +138,22 @@ Kolom CIP: het object uit de BIO Thema-uitwerking Softwarepakketten (2.0 definit
 | 5.34.01 | Privacy en bescherming van persoonsgegevens | IT-Compliance |  | Organisatorische maatregel (IT-Compliance); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt. |
 | 5.35.02 | Onafhankelijke beoordeling van informatiebeveiliging | IV-beleid |  | Organisatorische maatregel (IV-beleid); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
 | 5.36.01 | Naleving van beleid, regels en normen voor informatiebeveiliging | IV-beleid |  | Organisatorische maatregel (IV-beleid); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
+| 5.37.01 | Gedocumenteerde bedieningsprocedures | Wijzigingsbeheer |  | Organisatorische maatregel (Wijzigingsbeheer); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. Bedieningsprocedures zijn documenten van beheer, geen eigenschap van de applicatie. Nieuw nummer in versie 1.3. |
+| 6.01.01 | Screening | Screening, bewustzijn & opleiding |  | Personele maatregel (Screening, bewustzijn & opleiding); niet uit de applicatie aantoonbaar. Nieuw nummer in versie 1.3. |
 | 6.02.01 | Arbeidsovereenkomst | Screening, bewustzijn & opleiding |  | Personele maatregel (Screening, bewustzijn & opleiding); niet uit de applicatie aantoonbaar. |
 | 6.03.01 | Bewustwording van, opleiding en training in informatiebeveiliging | Screening, bewustzijn & opleiding |  | Personele maatregel (Screening, bewustzijn & opleiding); niet uit de applicatie aantoonbaar. |
 | 6.03.02 | Bewustwording van, opleiding en training in informatiebeveiliging | Screening, bewustzijn & opleiding |  | Personele maatregel (Screening, bewustzijn & opleiding); niet uit de applicatie aantoonbaar. |
 | 6.03.03 | Bewustwording van, opleiding en training in informatiebeveiliging | Screening, bewustzijn & opleiding |  | Personele maatregel (Screening, bewustzijn & opleiding); niet uit de applicatie aantoonbaar. |
+| 6.03.04 | Bewustwording van, opleiding en training in informatiebeveiliging | Screening, bewustzijn & opleiding |  | Personele maatregel (Screening, bewustzijn & opleiding); niet uit de applicatie aantoonbaar. Nieuw nummer in versie 1.3. |
 | 6.04.01 | Disciplinaire procedure | Screening, bewustzijn & opleiding |  | Personele maatregel (Screening, bewustzijn & opleiding); niet uit de applicatie aantoonbaar. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt. |
 | 6.05.01 | Verantwoordelijkheden na beëindiging of wijziging van het dienstverband | Screening, bewustzijn & opleiding |  | Personele maatregel (Screening, bewustzijn & opleiding); niet uit de applicatie aantoonbaar. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt. |
 | 6.06.01 | Vertrouwelijkheids- of geheimhoudingsovereenkomsten | Screening, bewustzijn & opleiding |  | Personele maatregel (Screening, bewustzijn & opleiding); niet uit de applicatie aantoonbaar. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt. |
 | 6.07.01 | Werken op afstand | Logische toegangsbeveiliging |  | Personele maatregel (Logische toegangsbeveiliging); niet uit de applicatie aantoonbaar. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt. |
 | 6.08.01 | Melden van informatiebeveiligings-gebeurtenissen | Security Incident Management |  | Personele maatregel (Security Incident Management); niet uit de applicatie aantoonbaar. |
-| 7.01.01 | Fysieke beveiligingszones | Fysieke toegang & beveiliging |  | Fysieke maatregel (Fysieke toegang & beveiliging); niet uit de applicatie aantoonbaar. |
 | 7.01.02 | Fysieke beveiligingszones | Fysieke toegang & beveiliging |  | Fysieke maatregel (Fysieke toegang & beveiliging); niet uit de applicatie aantoonbaar. |
 | 7.02.01 | Fysieke toegangsbeveiliging | Fysieke toegang & beveiliging |  | Fysieke maatregel (Fysieke toegang & beveiliging); niet uit de applicatie aantoonbaar. |
+| 7.03.01 | Beveiligen van kantoren, ruimten en faciliteiten | Fysieke toegang & beveiliging |  | Fysieke maatregel (Fysieke toegang & beveiliging); niet uit de applicatie aantoonbaar. Nieuw nummer in versie 1.3. |
+| 7.04.01 | Monitoren van de fysieke beveiliging | Fysieke toegang & beveiliging |  | Fysieke maatregel (Fysieke toegang & beveiliging); niet uit de applicatie aantoonbaar. Nieuw nummer in versie 1.3. |
 | 7.05.01 | Beschermen tegen fysieke en omgevingsdreigingen | Fysieke toegang & beveiliging |  | Fysieke maatregel (Fysieke toegang & beveiliging); niet uit de applicatie aantoonbaar. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt. |
 | 7.06.01 | Werken in beveiligde zones | Bedrijfsmiddelenbeheer |  | Fysieke maatregel (Bedrijfsmiddelenbeheer); niet uit de applicatie aantoonbaar. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt. |
 | 7.07.01 | ‘Clear desk’ en ‘clear screen’ | IT-Compliance |  | Fysieke maatregel (IT-Compliance); niet uit de applicatie aantoonbaar. |
@@ -178,10 +186,11 @@ Kolom CIP: het object uit de BIO Thema-uitwerking Softwarepakketten (2.0 definit
 | 8.21.03 | Beveiliging van netwerkdiensten | Netwerkbeveiliging |  | Technologische maatregel die bij een gekochte applicatie in de infrastructuur, de werkplek of het proces ligt (Netwerkbeveiliging), niet in de applicatieconfiguratie. |
 | 8.22.01 | Netwerksegmentatie | Netwerkbeveiliging |  | Technologische maatregel die bij een gekochte applicatie in de infrastructuur, de werkplek of het proces ligt (Netwerkbeveiliging), niet in de applicatieconfiguratie. |
 | 8.23.01 | Toepassen van webfilters | Netwerkbeveiliging |  | Technologische maatregel die bij een gekochte applicatie in de infrastructuur, de werkplek of het proces ligt (Netwerkbeveiliging), niet in de applicatieconfiguratie. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt. |
+| 8.24.02 | Gebruik van cryptografie | Cryptografie |  | Organisatorische maatregel (Cryptografie); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. Het gaat om de inventaris van bedrijfsmiddelen, niet om de applicatie. Nieuw nummer in versie 1.3. |
+| 8.24.05 | Gebruik van cryptografie | Cryptografie |  | Organisatorische maatregel (Cryptografie); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. Reservecertificaten bij een tweede leverancier zijn een afspraak van beheer. Nieuw nummer in versie 1.3. |
 | 8.26.01 | Toepassingsbeveiligingseisen | Secure Software Development | B.01 | Technologische maatregel die bij een gekochte applicatie in de infrastructuur, de werkplek of het proces ligt (Secure Software Development), niet in de applicatieconfiguratie. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt. CIP B.01: beveiligingseisen (authenticatie, toegang, encryptie, logging, foutafhandeling) worden bij verwerving gesteld; dat is het programma van eisen van de klant, geen applicatiebewijs. |
 | 8.32.02 | Wijzigingsbeheer | Wijzigingsbeheer | C.02 | Technologische maatregel die bij een gekochte applicatie in de infrastructuur, de werkplek of het proces ligt (Wijzigingsbeheer), niet in de applicatieconfiguratie. |
 | 8.34.01 | Bescherming van informatiesystemen tijdens audits | IT-Compliance |  | Technologische maatregel die bij een gekochte applicatie in de infrastructuur, de werkplek of het proces ligt (IT-Compliance), niet in de applicatieconfiguratie. BIO2 kent hier geen overheidsmaatregel; de ISO-maatregel geldt. |
-| 5.24.08 | Coordinated Vulnerability Disclosure | Overig |  | Organisatorische maatregel (Overig); het bewijs ligt bij beleid, proces of contract, niet in de applicatie. |
 
 ## Meedenken
 

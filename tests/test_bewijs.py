@@ -22,7 +22,7 @@ def test_elke_maatregel_precies_een_keer():
 def test_titels_volgen_de_bron():
     """Vergelijkt op genormaliseerde witruimte.
 
-    Zestig van de 148 titels in normen dragen nog de afbreekregels van de oorspronkelijke CIP-tabel
+    Tot 13-10-2026 droegen zestig titels in normen nog de afbreekregels van de oorspronkelijke CIP-tabel
     ("Rollen en verantwoordelijkheden bij \ninformatiebeveiliging"). Hier staan ze op een regel, want een
     titel met een harde newline is niet te tonen in een tabel. Twee titels dragen daarnaast een losse
     afsluitende apostrof ("User endpoint devices'"); die valt onder dezelfde normalisatie. Wordt normen
@@ -65,7 +65,7 @@ def test_geen_tekst_van_het_cip_in_de_repo():
     """
     verboden = ("overheidsmaatregel", "iso_maatregel", "risico")
     for m in BIO2["maatregelen"]:
-        assert set(m) == {"id", "titel", "thema"}, f"{m['id']}: onverwachte velden {sorted(set(m) - {'id', 'titel', 'thema'})}"
+        assert set(m) <= {"id", "titel", "thema", "soort"}, f"{m['id']}: onverwachte velden {sorted(set(m) - {'id', 'titel', 'thema', 'soort'})}"
     for veld in verboden:
         assert f'"{veld}"' not in (REPO / "bronnen" / "bio2.json").read_text(encoding="utf-8"), veld
 
